@@ -1,0 +1,18 @@
+{
+  "name": "TechShop",
+  "version": "0.0.0",
+  "description": "Human centered computing technology shopping project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrStaff/TechShop.git"
+  },
+  "author": "Jacob Stafford, Blake Williford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrStaff/TechShop/issues"
+  }
+}
