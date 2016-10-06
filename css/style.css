@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*Header*/
+#header {
+	height: 60px;
+	background-color: darkred;
+	position: fixed;
+	width: 100%;
+	display: block;
+}
+
+/*Spider*/
+#spidersection {
+	background-color: #222;	
+	padding: 100px;
+	
+}
+#spidergraphcontainer {
+	
+    width: 600px;
+    height: 600px;
+	position: relative;
+    margin: 0 auto 0 auto;
+    color: blueviolet;
+}
+
+
+/*Facets*/
+#facets {
+	width: 25%;
+	float: left;
+	background-color: #ddd;
+	height: 500px;
+}
+
+/*Products*/
+#products {
+	width: 75%;
+	float: left;
+	height: 500px;
+}
