@@ -10,12 +10,57 @@ body {
 	position: fixed;
 	width: 100%;
 	display: block;
+	z-index: 5;
+}
+
+#logo {
+	background-image: url('images/logo.svg');
+	width: 200px;
+	display: inline;
+	float: left;
+	
+	
+	
+}
+
+
+#nav ul {
+	list-display-type: none;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	border-bottom: 5px solid rgba(255,255,255,0.2);
+	width: 40%;
+}
+
+#nav li {
+	display: inline;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 18px;
+	margin: 0 30px;
+	line-height: 55px;
+	padding: 0;
+	width: 33%;
+	
+}
+#nav li.active {
+}
+
+#cart {
+	float: right;
+	display: inline;
+	position: fixed;
+	top: 5px;
+	right: 0px;
 }
 
 /*Spider*/
 #spidersection {
-	background-color: #222;	
+	background-image: url("../images/bg.jpg");
+	
+	background-color: #444;
 	padding: 100px;
+	background-attachment: fixed;
 	
 }
 #spidergraphcontainer {
@@ -24,7 +69,10 @@ body {
     height: 600px;
 	position: relative;
     margin: 0 auto 0 auto;
-    color: blueviolet;
+    color: #fff;
+	font-family: sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
 }
 
 
