@@ -1,7 +1,22 @@
+/*DigIT   Copyright 2016  Blake Williford  + Jacob Stafford */
+
 body {
 	margin: 0;
 	padding: 0;
 }
+
+h1, h2, h3, h4 {
+color: #333;
+font-family: sans-serif;
+
+}
+
+ul {
+	list-display-type: none;
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
 
 /*Header*/
 #header {
@@ -14,22 +29,17 @@ body {
 }
 
 #logo {
-	background-image: url('images/logo.svg');
 	width: 200px;
 	display: inline;
 	float: left;
-	
-	
-	
 }
-
 
 #nav ul {
 	list-display-type: none;
 	margin: 0 auto 0 auto;
 	padding: 0;
 	border-bottom: 5px solid rgba(255,255,255,0.2);
-	width: 40%;
+	width: 450px;
 }
 
 #nav li {
@@ -37,13 +47,14 @@ body {
 	color: #fff;
 	font-family: sans-serif;
 	font-size: 18px;
-	margin: 0 30px;
 	line-height: 55px;
-	padding: 0;
-	width: 33%;
-	
+	padding: 23px 30px 18px 30px;
+	width: 150px;
+
 }
 #nav li.active {
+	background-color: #660000;
+	border-bottom: 5px solid rgba(255,255,255,1);
 }
 
 #cart {
@@ -83,6 +94,16 @@ body {
 	background-color: #ddd;
 	height: 500px;
 }
+
+
+
+.facet {
+	padding: 30px;
+	color: #444;
+	font-famly:  sans-serif;
+	border-bottom :1px solid #aaa;
+}
+
 
 /*Products*/
 #products {
