@@ -1,5 +1,6 @@
-{
-    "amazon_product1": {
+var productList = [
+    {
+    "amazon_product": {
         "location": "https://www.amazon.com/HP-14-an013nr-14-Inch-Notebook-Drive/dp/B01F4ZG68A",
         "mm_name": "amazon_product",
         "title": "HP 14-an013nr 14-Inch Notebook (AMD E2, 4GB RAM, 32 GB Hard Drive)",
@@ -76,9 +77,9 @@
                 "title": "AmazonBasics 14-Inch Laptop and Tablet Bag"
             }
         ]
-    },
-
-    "amazon_product2": {
+    }},
+    {
+    "amazon_product": {
         "location": "https://www.amazon.com/Performance-Premium-Processor-SuperMulti-10-silver/dp/B01KAP7RJG",
         "mm_name": "amazon_product",
         "title": "2016 Newest ASUS 15.6” High Performance Premium HD Laptop (Intel Quad Core Pentium N3700 Processor up to 2.4 GHz, 4GB RAM, 500GB HDD, SuperMulti DVD, Wifi, HDMI, VGA, Webcam, Windows 10-silver)",
@@ -179,9 +180,9 @@
                 "title": "CoolBell 15.6 Inch Laptop Sleeve Case Cover With Colorful Life Tree Pattern Ultrabook Sleeve Bag…"
             }
         ]
-    },
-
-    "amazon_product3": {
+    }},
+    {
+    "amazon_product": {
         "location": "https://www.amazon.com/HP-15-ba040nr-15-6-Inch-Notebook-AMD/dp/B01E5BBFNA",
         "mm_name": "amazon_product",
         "title": "HP 15-ba040nr 15.6-Inch Notebook (AMD A10, 8 GB RAM, 1 TB HDD)",
@@ -250,9 +251,9 @@
                 "title": "Its just ok."
             }
         ]
-    },
-
-    "amazon_product4": {
+    }},
+    {
+    "amazon_product": {
         "location": "https://www.amazon.com/HP-Convertible-Flagship-Performance-Touchscreen/dp/B01JYS27KO",
         "mm_name": "amazon_product",
         "title": "2016 HP Envy X360 2-in-1 Convertible Flagship High Performance 15.6 Inch FHD Touchscreen Backlit Keyboard Laptop PC | Intel Core i5-6200U | 12GB RAM | 1TB HDD | WIFI | Windows 10 | Woov Laptop Sleeve",
@@ -330,9 +331,9 @@
                 "value": " 1 TB Serial ATA"
             }
         ]
-    },
-
-    "amazon_product5": {
+    }},
+    {
+    "amazon_product": {
         "location": "https://www.amazon.com/ENVY-x360-Performance-Convertible-Touch-Screen/dp/B01L1SEN0W",
         "mm_name": "amazon_product",
         "title": "2016 Newest HP ENVY x360 Flagship High Performance 2-in-1 Convertible Laptop PC, 15.6-inch Full HD Touch-Screen Display, Intel Core i5-6200U, 12GB DDR3L RAM, 1TB HDD, Backlit Keyboard, Windows 10",
@@ -359,9 +360,9 @@
                 "title": "Five Stars"
             }
         ]
-    },
-
-    "amazon_product6": {
+    }},
+    {
+    "amazon_product": {
         "location": "https://www.amazon.com/Lenovo-Flagship-Performance-Quad-Core-Bluetooth/dp/B01LEB91XK",
         "mm_name": "amazon_product",
         "title": "Newest Lenovo Z50 Flagship High Performance 15.6 inch HD Laptop PC | AMD FX-7500 Quad-Core | AMD Radeon R7 | 2.10 GHz| 8GB RAM | 1TB HDD | DVDRW | Bluetooth| WIFI | Windows 10 | Woov Laptop Sleeve",
@@ -406,9 +407,9 @@
                 "reviews_location": "https://www.amazon.com/review/create-review/ref=dpx_acr_wr_link?asin=B01LEB91XK"
             }
         ]
-    },
-
-    "amazon_product7": {
+    }},
+    {
+    "amazon_product": {
         "location": "https://www.amazon.com/Lenovo-15-6-inch-LED-backlight-Performance-Touchscreen/dp/B01D0TUMDC",
         "mm_name": "amazon_product",
         "title": "Lenovo 2016 Newest Model 15.6-inch HD LED-backlight Premium High Performance Touchscreen Laptop | Intel i3 Dual-core | 4GB RAM | 500GB HD | DVD±RW | HDMI | Bluetooth | WIFI | Windows 10",
@@ -509,9 +510,9 @@
                 "title": "Lenovo ThinkServer TS140 70A4000HUX i3-4130 3.4GHz Server Desktop Computer"
             }
         ]
-    },
-
-    "amazon_product8": {
+    }},
+    {
+    "amazon_product": {
         "location": "https://www.amazon.com/Lenovo-ideapad-300-80Q70021US-15-6-Inch/dp/B01FJFNE5I",
         "mm_name": "amazon_product",
         "title": "Lenovo ideapad 300 80Q70021US 15.6-Inch Laptop (Intel Core i5 6200U, 8 GB RAM, 1TB HDD, Windows 10)",
@@ -595,9 +596,9 @@
                 "title": "Logitech MK270 Wireless Keyboard/Mouse Combo,  Logitech Wireless Mouse USB (Black)"
             }
         ]
-    },
-
-    "amazon_product9": {
+    }},
+    {
+    "amazon_product": {
         "location": "https://www.amazon.com/Lenovo-ThinkPad-20BE003NUS-15-6-Inch-Laptop/dp/B00HJ6WZJC",
         "mm_name": "amazon_product",
         "title": "Lenovo ThinkPad T540p 20BE003NUS 15.6-Inch Laptop (Black)",
@@ -662,9 +663,9 @@
                 "title": "Lenovo ThinkPad Ultra Dock 90W US (40A20090US)"
             }
         ]
-    },
-
-    "amazon_product10": {
+    }},
+    {
+    "amazon_product": {
         "location": "https://www.amazon.com/GL752VW-DH71-17-3-inch-GTX960M-Graphic-Windows/dp/B01578ZK9A",
         "mm_name": "amazon_product",
         "title": "ASUS ROG GL752VW-DH71 17.3-inch Gaming Laptop (Intel i7 2.6GHz, 16GB DDR4 RAM, 1TB HDD,  GTX960M 2GB Graphic Card, Windows 10)",
@@ -747,9 +748,9 @@
                 "title": "Case Logic 17.3-Inch Laptop Case (VNCI-217)"
             }
         ]
-    },
-
-    "amazon_product11": {
+    }},
+    {
+    "amazon_product": {
         "location": "https://www.amazon.com/Dell-Educational-E3340-Professional-Refurbished/dp/B01A04R64S",
         "mm_name": "amazon_product",
         "title": "Dell 13.3-Inch Educational Laptop E3340 with Windows 7/10 Professional, Intel Dual-Core Celeron 2957U, 4GB DDR3L RAM, 250GB HDD, Bluetooth, USB 3.0 (Certified Refurbished)",
@@ -768,9 +769,9 @@
                 "location": "https://images-na.ssl-images-amazon.com/images/I/51UpNQ4kwGL._SL1000_.jpg"
             }
         ]
-    },
-
-    "newegg_product1": {
+    }},
+    {
+    "newegg_product": {
         "title": "ASUS Laptop X555DA-AS11 AMD A10-Series A10-8700P (1.80 GHz) 8 GB Memory 256 GB SSD AMD Radeon R5 Series 15.6\" Windows 10 Home 64-Bit",
         "overall_rating": {
             "type": "http://schema.org/AggregateRating",
@@ -984,10 +985,9 @@
         },
         "text_keywords": "Newegg, Newegg.com,ASUS Laptop X555DA-AS11 AMD A10-Series A10-8700P &#40;1.80 GHz&#41; 8 GB Memory 256 GB SSD AMD Radeon R5 Series 15.6&#34; Windows 10 Home 64-Bit",
         "location": "http://www.newegg.com/Product/Product.aspx?Item=1TS-001A-002P7&cm_re=laptop-_-1TS-001A-002P7-_-Product",
-        "mm_name": "newegg_product"
-    },
-
-    "newegg_product2": {
+        "mm_name": "newegg_product"    }},
+    {
+    "newegg_product": {
         "title": "ASUS 17.3\" GL752VW-DH71 Intel Core i7 6700HQ (2.60 GHz) NVIDIA GeForce GTX 960M 16 GB Memory 1 TB HDD Windows 10 Home 64-Bit Gaming Laptop",
         "overall_rating": {
             "type": "http://schema.org/AggregateRating",
@@ -1512,10 +1512,9 @@
         },
         "text_keywords": "Newegg, Newegg.com,ASUS 17.3&#34; GL752VW-DH71 Intel Core i7 6700HQ &#40;2.60 GHz&#41; NVIDIA GeForce GTX 960M 16 GB Memory 1 TB HDD Windows 10 Home 64-Bit Gaming Laptop",
         "location": "http://www.newegg.com/Product/Product.aspx?Item=N82E16834232770&ignorebbr=1&cm_re=PPSSITXYELRFFW-_-34-232-770-_-Product",
-        "mm_name": "newegg_product"
-    },
-
-    "newegg_product3": {
+        "mm_name": "newegg_product"    }},
+    {
+    "newegg_product": {
         "title": "ASUS Zenbook UX303UB-DH74T Ultrabook Intel Core i7 6500U (2.50 GHz) 12 GB Memory 512 GB SSD NVIDIA GeForce 940M 2 GB 13.3\" IPS Quad HD+ 3200 x 1800 Touchscreen 1.2 MP HD Camera Windows 10 Home 64-Bit",
         "overall_rating": {
             "type": "http://schema.org/AggregateRating",
@@ -1973,10 +1972,9 @@
         },
         "text_keywords": "Newegg, Newegg.com,ASUS Zenbook UX303UB-DH74T Ultrabook Intel Core i7 6500U &#40;2.50 GHz&#41; 12 GB Memory 512 GB SSD NVIDIA GeForce 940M 2 GB 13.3&#34; IPS Quad HD&#43; 3200 x 1800 Touchscreen 1.2 MP HD Camera Windows 10 Home 64-Bit",
         "location": "http://www.newegg.com/Product/Product.aspx?Item=N82E16834232777&ignorebbr=1&cm_re=PPSSITXYELRFFW-_-34-232-777-_-Product",
-        "mm_name": "newegg_product"
-    },
-
-    "newegg_product4": {
+        "mm_name": "newegg_product"    }},
+    {
+    "newegg_product": {
         "title": "DELL Laptop Inspiron 15 i5559-4415SLV Intel Core i5 6200U (2.30 GHz) 8 GB Memory 1 TB HDD Intel HD Graphics 520 15.6\" Touchscreen Windows 10 Home 64-Bit",
         "overall_rating": {
             "type": "http://schema.org/AggregateRating",
@@ -2367,10 +2365,9 @@
         },
         "text_keywords": "Newegg, Newegg.com,DELL Laptop Inspiron 15 i5559-4415SLV Intel Core i5 6200U &#40;2.30 GHz&#41; 8 GB Memory 1 TB HDD Intel HD Graphics 520 15.6&#34; Touchscreen Windows 10 Home 64-Bit",
         "location": "http://www.newegg.com/Product/Product.aspx?Item=N82E16834297343&cm_re=dell-_-34-297-343-_-Product",
-        "mm_name": "newegg_product"
-    },
-
-    "newegg_product5": {
+        "mm_name": "newegg_product"    }},
+    {
+    "newegg_product": {
         "title": "DELL XPS 13 XPS9350-5341SLV Laptop Intel Core i7-6560U (2.20 GHz) 8 GB Memory 256 GB SSD Intel Iris Graphics 540 13.3\" 3200 x 1800 Touchscreen Windows 10 Home 64-Bit",
         "overall_rating": {
             "type": "http://schema.org/AggregateRating",
@@ -2700,10 +2697,9 @@
         },
         "text_keywords": "Newegg, Newegg.com,DELL XPS 13 XPS9350-5341SLV Laptop Intel Core i7-6560U &#40;2.20 GHz&#41; 8 GB Memory 256 GB SSD Intel Iris Graphics 540 13.3&#34; 3200 x 1800 Touchscreen Windows 10 Home 64-Bit",
         "location": "http://www.newegg.com/Product/Product.aspx?Item=N82E16834297351&cm_re=dell-_-34-297-351-_-Product",
-        "mm_name": "newegg_product"
-    },
-
-    "newegg_product6": {
+        "mm_name": "newegg_product"    }},
+    {
+    "newegg_product": {
         "title": "DELL Laptop Latitude E6430 Intel Core i5 3320M (2.60 GHz) 8 GB Memory 256 GB SSD Intel HD Graphics 4000 14.0\" Windows 7 Professional 64-Bit",
         "overall_rating": {
             "type": "http://schema.org/AggregateRating",
@@ -3018,10 +3014,9 @@
         },
         "text_keywords": "Newegg, Newegg.com,Refurbished: DELL Laptop Latitude E6430 Intel Core i5 3320M &#40;2.60 GHz&#41; 8 GB Memory 256 GB SSD Intel HD Graphics 4000 14.0&#34; Windows 7 Professional 64-Bit",
         "location": "http://www.newegg.com/Product/Product.aspx?Item=9SIABYS4PG1063&cm_re=dell-_-34-299-242-_-Product",
-        "mm_name": "newegg_product"
-    },
-
-    "newegg_product7": {
+        "mm_name": "newegg_product"    }},
+    {
+    "newegg_product": {
         "title": "DELL Laptop Inspiron i5559-5347SLV Intel Core i5 6200U (2.30 GHz) 12 GB Memory 1 TB HDD Intel HD Graphics 520 15.6\" Intel RealSense 3D Camera Touchscreen Windows 10 Home 64-Bit",
         "overall_rating": {
             "type": "http://schema.org/AggregateRating",
@@ -3375,10 +3370,9 @@
         },
         "text_keywords": "Newegg, Newegg.com,DELL Laptop Inspiron i5559-5347SLV Intel Core i5 6200U &#40;2.30 GHz&#41; 12 GB Memory 1 TB HDD Intel HD Graphics 520 15.6&#34; Intel RealSense 3D Camera Touchscreen Windows 10 Home 64-Bit",
         "location": "http://www.newegg.com/Product/Product.aspx?Item=N82E16834298760&cm_re=dell-_-34-298-760-_-Product",
-        "mm_name": "newegg_product"
-    },
-
-    "newegg_product8": {
+        "mm_name": "newegg_product"    }},
+    {
+    "newegg_product": {
         "title": "DELL Laptop Inspiron i5755-4287SLV AMD A8-Series A8-7410 (2.20 GHz) 8 GB Memory 1 TB HDD AMD Radeon R5 Series 17.3\" 1920 x 1080 Touchscreen 720p Webcam Windows 10 Home 64-Bit",
         "overall_rating": {
             "type": "http://schema.org/AggregateRating",
@@ -3796,10 +3790,9 @@
         },
         "text_keywords": "Newegg, Newegg.com,DELL Laptop Inspiron i5755-4287SLV AMD A8-Series A8-7410 &#40;2.20 GHz&#41; 8 GB Memory 1 TB HDD AMD Radeon R5 Series 17.3&#34; 1920 x 1080 Touchscreen 720p Webcam Windows 10 Home 64-Bit",
         "location": "http://www.newegg.com/Product/Product.aspx?Item=N82E16834298720&cm_re=dell-_-34-298-720-_-Product",
-        "mm_name": "newegg_product"
-    },
-
-    "tigerdirect_product1": {
+        "mm_name": "newegg_product"    }},
+    {
+    "tigerdirect_product": {
         "main_images": [
             {
                 "mm_name": "image",
@@ -3816,10 +3809,9 @@
         "site_name": "Tigerdirect",
         "text_keywords": "T1C08UT#ABA,HP,889894529015,tigerdirect.com",
         "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=9876952&CatId=4935",
-        "mm_name": "tigerdirect_product"
-    },
-
-    "tigerdirect_product2": {
+        "mm_name": "tigerdirect_product"    }},
+    {
+    "tigerdirect_product": {
         "main_images": [
             {
                 "mm_name": "image",
@@ -3857,10 +3849,9 @@
         "site_name": "Tigerdirect",
         "text_keywords": "NX.MGAAA.004,Acer,0887899487781,tigerdirect.com",
         "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=8921430&CatId=4935",
-        "mm_name": "tigerdirect_product"
-    },
-
-    "tigerdirect_product3": {
+        "mm_name": "tigerdirect_product"    }},
+    {
+    "tigerdirect_product": {
         "main_images": [
             {
                 "mm_name": "image",
@@ -3877,10 +3868,9 @@
         "site_name": "Tigerdirect",
         "text_keywords": "20GQ000EUS,Lenovo,tigerdirect.com",
         "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=1765122&CatId=4935",
-        "mm_name": "tigerdirect_product"
-    },
-
-    "tigerdirect_product4": {
+        "mm_name": "tigerdirect_product"    }},
+    {
+    "tigerdirect_product": {
         "main_images": [
             {
                 "mm_name": "image",
@@ -3897,10 +3887,9 @@
         "site_name": "Tigerdirect",
         "text_keywords": "AW13R2-8900SLV,DELL,tigerdirect.com",
         "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=4244293&CatId=4935",
-        "mm_name": "tigerdirect_product"
-    },
-
-    "tigerdirect_product5": {
+        "mm_name": "tigerdirect_product"    }},
+    {
+    "tigerdirect_product": {
         "main_images": [
             {
                 "mm_name": "image",
@@ -3917,10 +3906,9 @@
         "site_name": "Tigerdirect",
         "text_keywords": "X0S48UA#ABA,HP,tigerdirect.com",
         "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=94737&CatId=4935",
-        "mm_name": "tigerdirect_product"
-    },
-
-    "tigerdirect_product6": {
+        "mm_name": "tigerdirect_product"    }},
+    {
+    "tigerdirect_product": {
         "main_images": [
             {
                 "mm_name": "image",
@@ -3937,10 +3925,9 @@
         "site_name": "Tigerdirect",
         "text_keywords": "W0S59UT#ABA,HP,tigerdirect.com",
         "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=4712117&CatId=4935",
-        "mm_name": "tigerdirect_product"
-    },
-
-    "tigerdirect_product7": {
+        "mm_name": "tigerdirect_product"    }},
+    {
+    "tigerdirect_product": {
         "main_images": [
             {
                 "mm_name": "image",
@@ -3957,10 +3944,9 @@
         "site_name": "Tigerdirect",
         "text_keywords": "W0S59UT#ABA,HP,tigerdirect.com",
         "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=4712117&CatId=4935",
-        "mm_name": "tigerdirect_product"
-    },
-
-    "tigerdirect_product8": {
+        "mm_name": "tigerdirect_product"    }},
+    {
+    "tigerdirect_product": {
         "main_images": [
             {
                 "mm_name": "image",
@@ -3977,10 +3963,9 @@
         "site_name": "Tigerdirect",
         "text_keywords": "M-IBT430/2.6CI5-8180,Lenovo,tigerdirect.com",
         "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=471781&CatId=4935",
-        "mm_name": "tigerdirect_product"
-    },
-
-    "tigerdirect_product9": {
+        "mm_name": "tigerdirect_product"    }},
+    {
+    "tigerdirect_product": {
         "main_images": [
             {
                 "mm_name": "image",
@@ -3997,10 +3982,9 @@
         "site_name": "Tigerdirect",
         "text_keywords": "PS461U-048011,Toshiba,tigerdirect.com",
         "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=4223191&CatId=4935",
-        "mm_name": "tigerdirect_product"
-    },
-
-    "tigerdirect_product10": {
+        "mm_name": "tigerdirect_product"    }},
+    {
+    "tigerdirect_product": {
         "main_images": [
             {
                 "mm_name": "image",
@@ -4026,10 +4010,9 @@
         "site_name": "Tigerdirect",
         "text_keywords": "NX.M94AA.006,Acer,0887899945359,tigerdirect.com",
         "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=9594698&CatId=4935",
-        "mm_name": "tigerdirect_product"
-    },
-
-    "tigerdirect_product11": {
+        "mm_name": "tigerdirect_product"    }},
+    {
+    "tigerdirect_product": {
         "main_images": [
             {
                 "mm_name": "image",
@@ -4046,10 +4029,9 @@
         "site_name": "Tigerdirect",
         "text_keywords": "PE60 6QE-1268,MSI,tigerdirect.com",
         "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=3492190&CatId=4935",
-        "mm_name": "tigerdirect_product"
-    },
-
-    "tigerdirect_product12": {
+        "mm_name": "tigerdirect_product"    }},
+    {
+    "tigerdirect_product": {
         "main_images": [
             {
                 "mm_name": "image",
@@ -4066,6 +4048,5 @@
         "site_name": "Tigerdirect",
         "text_keywords": "CX72 6QD-208US,MSI,tigerdirect.com",
         "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=3436938&CatId=17",
-        "mm_name": "tigerdirect_product"
-    }
-}
+        "mm_name": "tigerdirect_product"    }}
+]
