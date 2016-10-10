@@ -1,0 +1,85 @@
+<!DOCTYPE = html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DigIt Shopping Platform</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="node_modules/jquery.spidergraph/assets/js/jquery.spidergraph.js"></script>
+		<link href="css/style.css" rel='stylesheet' type='text/css'/>
+		<link href="css/nouislider.min.css" rel="stylesheet">
+   
+
+
+
+   </head>
+    <body>
+	<script src="js/nouislider.min.js"></script>
+
+	
+	<div id="header">
+		<div id="logo">
+			<a href="index.html"><img src="images/logo.svg" width="140"></a>
+		</div>
+		<div id="nav">
+			<ul>
+				<a href="profile.html"><li class="active">PROFILE</li></a>
+				<a href="filter.html"><li class="active">FILTER</li></a>
+				<a href="compare.html"><li>COMPARE</li></a>
+				<a href="purchase.html"><li>PURCHASE</li></a>
+			</ul>
+		</div>
+		<div id="cart">
+			<img src="images/thumb.svg" width="50">
+		</div>
+		
+	</div>
+	
+	<div id="spidersection">
+		<div id="directions">
+			<h4>Find some laptops you dig!</h4>
+		</div>
+	<div id="facets">
+		<ul>
+			<li>
+				<div class="facet">
+				<h2>REVIEWS</h2>
+					<div id="toggle">
+					<script type="text/javascript">
+	var startSlider = document.getElementById('toggle');
+
+noUiSlider.create(startSlider, {
+	start: [4, 5],
+	step: 1,
+	tooltips: [ true, true ],
+	range: {
+		'min': [ 1 ],
+		'max': [ 5 ]
+	},
+
+});
+</script>
+					</div>
+				</div>
+			<li>
+		<ul>
+		
+	</div>
+	<div id="products">
+		<div class="product">
+		<img src="images/laptop.jpg"></img>
+		
+		<div class="dig-it-button"></div>
+			<div class="close"></div>
+		</div>
+	</div>
+	</div>
+	
+
+
+	
+
+	
+	
+    <script src="js/main.js"></script>
+    </body>
+</html>

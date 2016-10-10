@@ -5,10 +5,23 @@ body {
 	padding: 0;
 }
 
+a {
+	text-decoration: none;	
+}
+
 h1, h2, h3, h4 {
-color: #333;
+color: #ddd;
 font-family: sans-serif;
 
+}
+
+h4 {
+color: #eee;
+font-size: 24px;
+font-style: italic;
+font-weight: 200;
+margin: 0 auto 30px auto;
+text-align: center;	
 }
 
 ul {
@@ -17,11 +30,33 @@ ul {
 	padding: 0;
 }
 
+#intro {
+	background-image: url('../images/intro-bg.jpg');
+	background-attachment: cover;
+	height: 100%;
+}
+
+#intro-logo {
+	padding-top: 200px;
+	text-align: center;
+	margin: auto;
+}
+#intro-button {
+	margin: auto;
+	color: #fff;
+
+}
+
+
+
+
+
 
 /*Header*/
 #header {
 	height: 60px;
 	background-color: darkred;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
 	position: fixed;
 	width: 100%;
 	display: block;
@@ -39,22 +74,29 @@ ul {
 	margin: 0 auto 0 auto;
 	padding: 0;
 	border-bottom: 5px solid rgba(255,255,255,0.2);
-	width: 450px;
+	width: 600px;
 }
 
 #nav li {
 	display: inline;
-	color: #fff;
+	color: #ccc;
 	font-family: sans-serif;
 	font-size: 18px;
 	line-height: 55px;
 	padding: 23px 30px 18px 30px;
 	width: 150px;
+	margin-right: -4px;
+
 
 }
 #nav li.active {
-	background-color: #660000;
 	border-bottom: 5px solid rgba(255,255,255,1);
+	color: #fff;
+}
+#nav li:hover {
+	color: #fff;
+	background-color: #770000;
+	transition-duration: 0.5s;
 }
 
 #cart {
@@ -65,12 +107,19 @@ ul {
 	right: 0px;
 }
 
+#directions {
+	border-bottom: 1px solid rgba(255,255,255,0.2);	
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
 /*Spider*/
 #spidersection {
 	background-image: url("../images/bg.jpg");
-	
+	height: 100%;
+	overflow-y: hidden;
 	background-color: #444;
-	padding: 100px;
+	padding-top: 100px;
 	background-attachment: fixed;
 	
 }
@@ -86,28 +135,65 @@ ul {
 	text-transform: uppercase;
 }
 
+#comp-spidergraphcontainer {
+	
+    width: 300px;
+    height: 300px;
 
-/*Facets*/
-#facets {
-	width: 25%;
-	float: left;
-	background-color: #ddd;
-	height: 500px;
 }
 
 
+/*Facets*/
+#facets {
+	width: 20%;
+	float: left;
+	position: fixed;
+	height: 100%;
+}
 
 .facet {
 	padding: 30px;
 	color: #444;
 	font-famly:  sans-serif;
-	border-bottom :1px solid #aaa;
 }
+
+.noUi-base {
+	color: rgba(255,255,255,0.1);
+	
+}
+
 
 
 /*Products*/
 #products {
-	width: 75%;
-	float: left;
+	width: 70%;
+	float: right;
 	height: 500px;
+	margin-left: 5%;
 }
+.product {
+	background-color: #fff;
+	height: 250px;
+}
+.product img {
+	padding: 30px;
+	height: 200px;
+}
+.close {
+	float: right;
+	background-color: #000;
+	height: 50px;
+	width: 50px;
+	margin-right: -20px;
+	margin-top: -20px;
+}
+
+.dig-it-button {
+	float: right;
+	background-color: darkred;
+	height: 50px;
+	width: 150px;
+	margin-right: 0px;
+	margin-top: 230px;
+}
+
