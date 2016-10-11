@@ -9,15 +9,10 @@
 		<link href="css/style.css" rel='stylesheet' type='text/css'/>
 		<script src="js/wNumb.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
-	
-   
-
-
-
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/main.js"></script>
    </head>
     <body>
-	<script src="js/nouislider.min.js"></script>
-
 	
 	<div id="header">
 		<div id="logo">
@@ -47,25 +42,6 @@
 				<div class="facet">
 				<h2>REVIEWS</h2>
 					<div id="reviews-toggle">
-					<script type="text/javascript">
-						var reviewsSlider = document.getElementById('reviews-toggle');
-
-						noUiSlider.create(reviewsSlider, {
-						start: [4, 5],
-						step: 1,
-						connect: true,
-						tooltips: [ true, true ],
-						range: {
-							'min': [ 1 ],
-							'max': [ 5 ]
-						},
-						format: wNumb({
-							decimals: 0,
-							thousand: ','
-						})
-
-					});
-					</script>
 					</div>
 				</div>
 			<li>
@@ -73,26 +49,6 @@
 				<div class="facet">
 				<h2>PRICE RANGE</h2>
 					<div id="price-toggle">
-					<script type="text/javascript">
-					var priceSlider = document.getElementById('price-toggle');
-
-				noUiSlider.create(priceSlider, {
-					start: [400, 1000],
-					step: 100,
-					connect: true,
-					tooltips: [ true, true ],
-					range: {
-						'min': [0],
-						'max': [2000]
-					},
-					format: wNumb({
-						decimals: 0,
-						thousand: ',',
-						prefix: '$',
-					})
-
-				});
-				</script>
 					</div>
 				</div>
 			<li>
@@ -100,26 +56,7 @@
 				<div class="facet">
 				<h2>BATTERY LIFE</h2>
 					<div id="battery-toggle">
-					<script type="text/javascript">
-						var batterySlider = document.getElementById('battery-toggle');
 
-					noUiSlider.create(batterySlider, {
-						start: [10, 20],
-						step: 1,
-						connect: true,
-						tooltips: [ true, true ],
-						range: {
-							'min': [6],
-							'max': [20]
-						},
-							format: wNumb({
-							decimals: 0,
-							thousand: ',',
-							postfix: ' Hrs',
-						})
-
-					});
-					</script>
 					</div>
 				</div>
 			<li>
@@ -127,60 +64,11 @@
 				<div class="facet">
 				<h2>WEIGHT</h2>
 					<div id="weight-toggle">
-					<script type="text/javascript">
-						var weightSlider = document.getElementById('weight-toggle');
-
-					noUiSlider.create(weightSlider, {
-						start: [6, 10],
-						step: 1,
-						connect: true,
-						tooltips: [ true, true ],
-						range: {
-							'min': [1],
-							'max': [20]
-						},
-							format: wNumb({
-							decimals: 0,
-							thousand: ',',
-							postfix: ' Lbs',
-						})
-
-					});
-					</script>
 					</div>
 				</div>
-			<li>
-			<li>
-				<div class="facet">
-				<h2>RAM</h2>
-					<div id="ram-toggle">
-					<script type="text/javascript">
-						var ramSlider = document.getElementById('ram-toggle');
-
-					noUiSlider.create(ramSlider, {
-						start: [4,8],
-						step: 2,
-						connect: true,
-						tooltips: [true, true],
-						range: {
-							'min': [2],
-							'max': [16]
-						},
-							format: wNumb({
-							decimals: 0,
-							thousand: ',',
-							postfix: ' GB',
-						})
-
-					});
-					</script>
-					</div>
-				</div>
-			<li>
-			
-			
+			<li>		
 		<ul>
-		
+		<script src="js/filter.js"></script>
 	</div>
 	<div id="products">
 		<div class="product">
@@ -191,13 +79,6 @@
 		</div>
 	</div>
 	</div>
-	
 
-
-	
-
-	
-	
-    <script src="js/main.js"></script>
     </body>
 </html>

@@ -3984,33 +3984,42 @@
             "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=3436938&CatId=17",
             "mm_name": "tigerdirect_product"    }}
     ];
-    var laptops = {};
-    var profile = {
-        "mRAM": 0,   
-        "mCPU": 0,
-        "mWEIGHT": 0,
-        "mREVIEW": 0,
-        "mPRICE":  0,
-        "mBATT": 0,
-        "brand": "",
-        "reviewRange":{
-            "low": 5,
-            "high": 0
-        },
-        "priceRange":{
-            "low": 5,
-            "high": 0
-        },
-        "batteryRange":{
-            "low": 5,
-            "high": 0
-        },
-        "weightRange":{
-            "low": 5,
-            "high": 0
-        } 
-    };
-    profile = JSON.parse(localStorage.getItem("profile"));
+    var profile = JSON.parse(localStorage.getItem("profile"));
+    var laptops = JSON.parse(localStorage.getItem("laptops"));
+    if(laptops == null){
+         laptops = makeLaptopArray(productList);
+    }
+    if(profile == null){
+         profile = {
+            "mRAM": 0,   
+            "mCPU": 0,
+            "mWEIGHT": 0,
+            "mREVIEW": 0,
+            "mPRICE":  0,
+            "mBATT": 0,
+            "brand": "",
+            "reviewRange":{
+                "low": 1,
+                "high": 5
+            },
+            "priceRange":{
+                "low": 100,
+                "high": 2000
+            },
+            "batteryRange":{
+                "low": 3,
+                "high": 10
+            },
+            "weightRange":{
+                "low": 1,
+                "high": 10
+            } 
+        };
+    }
+    localStorage.setItem("laptops", JSON.stringify(laptops));
+    localStorage.setItem("profile", JSON.stringify(profile));
+
+    
 $(document).ready(function() {
 
     $('#spidergraphcontainer').spidergraph({
@@ -4050,7 +4059,7 @@ function setRank(laptop, profile){
     rank += (laptop.weight *100) * Math.pow(10, profile.mWEIGHT);
     rank += (laptop.battery*100) * Math.pow(10, profile.mBATT);
     rank += (laptop.rating*200) * Math.pow(10, profile.mREVIEW);
-    rank += (laptop.price) * Math.pow(10, profile.mPRICE);
+    rank += (2000 -laptop.price) * Math.pow(10, profile.mPRICE);
     laptop.rank = rank;
     return rank;
 }
@@ -4058,6 +4067,7 @@ function setAllRanks(laptopArray, profile){
     for(var i = 0; i <laptopArray.length; i++){
         setRank(laptopArray[i], profile);
     }
+    localStorage.setItem("laptops", JSON.stringify(laptops));
 }
 //takes in bigsemantic entry and returns an object that wraps the laptop
 function parseInfo(bsEntry){
@@ -4226,7 +4236,7 @@ function makeLaptopArray(bsEntries){
     return laptops;
 }
 
-//returns best 5 laptops based rankings (must call setRank on all)
+//sorts laptop array based on preset rank
 function sortArrayByRank(laptopArray){
     laptopArray.sort(function(a,b){
         return  b.rank - a.rank;
