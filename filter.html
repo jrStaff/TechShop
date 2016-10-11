@@ -5,8 +5,11 @@
         <title>DigIt Shopping Platform</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script src="node_modules/jquery.spidergraph/assets/js/jquery.spidergraph.js"></script>
+		<link href="css/nouislider.css" rel="stylesheet">
 		<link href="css/style.css" rel='stylesheet' type='text/css'/>
-		<link href="css/nouislider.min.css" rel="stylesheet">
+		
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
+	
    
 
 
@@ -35,21 +38,22 @@
 	</div>
 	
 	<div id="spidersection">
-		<div id="directions">
-			<h4>Find some laptops you dig!</h4>
+		<div id="directions">	
+				<h4>Find some laptops you dig!</h4>
 		</div>
 	<div id="facets">
 		<ul>
 			<li>
 				<div class="facet">
 				<h2>REVIEWS</h2>
-					<div id="toggle">
+					<div id="reviews-toggle">
 					<script type="text/javascript">
-	var startSlider = document.getElementById('toggle');
+	var reviewsSlider = document.getElementById('reviews-toggle');
 
-noUiSlider.create(startSlider, {
+	noUiSlider.create(reviewsSlider, {
 	start: [4, 5],
 	step: 1,
+	connect: true,
 	tooltips: [ true, true ],
 	range: {
 		'min': [ 1 ],
@@ -61,6 +65,96 @@ noUiSlider.create(startSlider, {
 					</div>
 				</div>
 			<li>
+			<li>
+				<div class="facet">
+				<h2>PRICE RANGE</h2>
+					<div id="price-toggle">
+					<script type="text/javascript">
+	var priceSlider = document.getElementById('price-toggle');
+
+noUiSlider.create(priceSlider, {
+	start: [400, 1000],
+	step: 100,
+	connect: true,
+	tooltips: [ true, true ],
+	range: {
+		'min': [0],
+		'max': [2000]
+	},
+
+});
+</script>
+					</div>
+				</div>
+			<li>
+			<li>
+				<div class="facet">
+				<h2>BATTERY LIFE</h2>
+					<div id="battery-toggle">
+					<script type="text/javascript">
+	var batterySlider = document.getElementById('battery-toggle');
+
+noUiSlider.create(batterySlider, {
+	start: [10, 20],
+	step: 1,
+	connect: true,
+	tooltips: [ true, true ],
+	range: {
+		'min': [6],
+		'max': [20]
+	},
+
+});
+</script>
+					</div>
+				</div>
+			<li>
+			<li>
+				<div class="facet">
+				<h2>WEIGHT</h2>
+					<div id="weight-toggle">
+					<script type="text/javascript">
+	var weightSlider = document.getElementById('weight-toggle');
+
+noUiSlider.create(weightSlider, {
+	start: [6, 10],
+	step: 1,
+	connect: true,
+	tooltips: [ true, true ],
+	range: {
+		'min': [1],
+		'max': [20]
+	},
+
+});
+</script>
+					</div>
+				</div>
+			<li>
+			<li>
+				<div class="facet">
+				<h2>RAM</h2>
+					<div id="ram-toggle">
+					<script type="text/javascript">
+	var ramSlider = document.getElementById('ram-toggle');
+
+noUiSlider.create(ramSlider, {
+	start: [4,8],
+	step: 2,
+	connect: true,
+	tooltips: [true, true],
+	range: {
+		'min': [2],
+		'max': [16]
+	},
+
+});
+</script>
+					</div>
+				</div>
+			<li>
+			
+			
 		<ul>
 		
 	</div>
