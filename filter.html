@@ -7,7 +7,7 @@
         <script src="node_modules/jquery.spidergraph/assets/js/jquery.spidergraph.js"></script>
 		<link href="css/nouislider.css" rel="stylesheet">
 		<link href="css/style.css" rel='stylesheet' type='text/css'/>
-		
+		<script src="js/wNumb.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
 	
    
@@ -25,10 +25,10 @@
 		</div>
 		<div id="nav">
 			<ul>
-				<a href="profile.html"><li class="active">PROFILE</li></a>
-				<a href="filter.html"><li class="active">FILTER</li></a>
-				<a href="compare.html"><li>COMPARE</li></a>
-				<a href="purchase.html"><li>PURCHASE</li></a>
+				<a href="profile.html"><li class="active"><strong>1</strong> PROFILE</li></a>
+				<a href="filter.html"><li class="active"><strong>2</strong> FILTER</li></a>
+				<a href="compare.html"><li><strong>3</strong> COMPARE</li></a>
+				<a href="purchase.html"><li><strong>4</strong> PURCHASE</li></a>
 			</ul>
 		</div>
 		<div id="cart">
@@ -59,6 +59,10 @@
 		'min': [ 1 ],
 		'max': [ 5 ]
 	},
+	format: wNumb({
+		decimals: 0,
+		thousand: ','
+	})
 
 });
 </script>
@@ -81,6 +85,11 @@ noUiSlider.create(priceSlider, {
 		'min': [0],
 		'max': [2000]
 	},
+	format: wNumb({
+		decimals: 0,
+		thousand: ',',
+		prefix: '$',
+	})
 
 });
 </script>
@@ -103,6 +112,11 @@ noUiSlider.create(batterySlider, {
 		'min': [6],
 		'max': [20]
 	},
+		format: wNumb({
+		decimals: 0,
+		thousand: ',',
+		postfix: ' Hrs',
+	})
 
 });
 </script>
@@ -125,6 +139,11 @@ noUiSlider.create(weightSlider, {
 		'min': [1],
 		'max': [20]
 	},
+		format: wNumb({
+		decimals: 0,
+		thousand: ',',
+		postfix: ' Lbs',
+	})
 
 });
 </script>
@@ -147,6 +166,11 @@ noUiSlider.create(ramSlider, {
 		'min': [2],
 		'max': [16]
 	},
+		format: wNumb({
+		decimals: 0,
+		thousand: ',',
+		postfix: ' GB',
+	})
 
 });
 </script>
