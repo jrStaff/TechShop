@@ -9,15 +9,10 @@
 		<link href="css/style.css" rel='stylesheet' type='text/css'/>
 		<script src="js/wNumb.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
-	
-   
-
-
-
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/main.js"></script>
    </head>
     <body>
-	<script src="js/nouislider.min.js"></script>
-
 	
 	<div id="header">
 		<div id="logo">
@@ -32,9 +27,7 @@
 			</ul>
 		</div>
 		<div id="cart">
-			0
 		</div>
-		
 		
 	</div>
 	
@@ -48,26 +41,6 @@
 				<div class="facet">
 				<h2>REVIEWS</h2>
 					<div id="reviews-toggle">
-					<script type="text/javascript">
-	var reviewsSlider = document.getElementById('reviews-toggle');
-
-	noUiSlider.create(reviewsSlider, {
-	start: [4, 5],
-	step: 1,
-	connect: true,
-	tooltips: [ true, true ],
-	range: {
-		'min': [ 1 ],
-		'max': [ 5 ]
-	},
-	format: wNumb({
-		decimals: 0,
-		thousand: ',',
-		postfix: ' STARS',
-	})
-
-});
-</script>
 					</div>
 				</div>
 			<li>
@@ -75,26 +48,6 @@
 				<div class="facet">
 				<h2>PRICE RANGE</h2>
 					<div id="price-toggle">
-					<script type="text/javascript">
-	var priceSlider = document.getElementById('price-toggle');
-
-noUiSlider.create(priceSlider, {
-	start: [400, 1000],
-	step: 100,
-	connect: true,
-	tooltips: [ true, true ],
-	range: {
-		'min': [0],
-		'max': [2000]
-	},
-	format: wNumb({
-		decimals: 0,
-		thousand: ',',
-		prefix: '$',
-	})
-
-});
-</script>
 					</div>
 				</div>
 			<li>
@@ -102,26 +55,7 @@ noUiSlider.create(priceSlider, {
 				<div class="facet">
 				<h2>BATTERY LIFE</h2>
 					<div id="battery-toggle">
-					<script type="text/javascript">
-	var batterySlider = document.getElementById('battery-toggle');
 
-noUiSlider.create(batterySlider, {
-	start: [10, 20],
-	step: 1,
-	connect: true,
-	tooltips: [ true, true ],
-	range: {
-		'min': [6],
-		'max': [20]
-	},
-		format: wNumb({
-		decimals: 0,
-		thousand: ',',
-		postfix: ' HRS',
-	})
-
-});
-</script>
 					</div>
 				</div>
 			<li>
@@ -129,60 +63,11 @@ noUiSlider.create(batterySlider, {
 				<div class="facet">
 				<h2>WEIGHT</h2>
 					<div id="weight-toggle">
-					<script type="text/javascript">
-	var weightSlider = document.getElementById('weight-toggle');
-
-noUiSlider.create(weightSlider, {
-	start: [6, 10],
-	step: 1,
-	connect: true,
-	tooltips: [ true, true ],
-	range: {
-		'min': [1],
-		'max': [20]
-	},
-		format: wNumb({
-		decimals: 0,
-		thousand: ',',
-		postfix: ' LBS',
-	})
-
-});
-</script>
 					</div>
 				</div>
-			<li>
-			<li>
-				<div class="facet">
-				<h2>RAM</h2>
-					<div id="ram-toggle">
-					<script type="text/javascript">
-	var ramSlider = document.getElementById('ram-toggle');
-
-noUiSlider.create(ramSlider, {
-	start: [4,8],
-	step: 2,
-	connect: true,
-	tooltips: [true, true],
-	range: {
-		'min': [2],
-		'max': [16]
-	},
-		format: wNumb({
-		decimals: 0,
-		thousand: ',',
-		postfix: ' GB',
-	})
-
-});
-</script>
-					</div>
-				</div>
-			<li>
-			
-			
+			<li>		
 		<ul>
-		
+		<script src="js/filter.js"></script>
 	</div>
 	<div id="products">
 		
@@ -206,7 +91,6 @@ noUiSlider.create(ramSlider, {
 			<div class="product-content">
 				<h3>Dell - Inspiron 2-in-1 13.3" Touch-Screen Laptop - Intel Core i7 - 12GB Memory - 512GB Solid State Drive - Gray</h3>
 				<p>All-in-one Dell Inspiron computer. The 13-inch Full HD touch screen provides clarity for fine-detail work, and the small footprint makes it easy to take it anywhere. This Dell Inspiron computer converts four ways so you can find a comfortable position to work where ever you are.</p>
-			
 			
 			</div>
 		</li>
@@ -240,10 +124,11 @@ noUiSlider.create(ramSlider, {
 	
 </div>
 
-	
+		<div class="dig-it-button"></div>
+			<div class="close"></div>
+		</div>
+	</div>
+	</div>
 
-	
-	
-    <script src="js/main.js"></script>
     </body>
 </html>

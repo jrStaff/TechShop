@@ -1,3 +1,4 @@
+    'use strict';
     var productList = [
         {
         "amazon_product": {
@@ -599,78 +600,11 @@
         }},
         {
         "amazon_product": {
-            "location": "https://www.amazon.com/Lenovo-ThinkPad-20BE003NUS-15-6-Inch-Laptop/dp/B00HJ6WZJC",
-            "mm_name": "amazon_product",
-            "title": "Lenovo ThinkPad T540p 20BE003NUS 15.6-Inch Laptop (Black)",
-            "description": "Amazon.com: Lenovo ThinkPad T540p 20BE003NUS 15.6-Inch Laptop (Black): Computers & Accessories",
-            "price": "$1,199.99",
-            "overall_rating": "5.0 out of 5 stars",
-            "text_keywords": "Lenovo ThinkPad T540p 20BE003NUS 15.6-Inch Laptop (Black),Lenovo,20BE003NUS",
-            "department": {
-                "mm_name": "rich_document",
-                "title": "Computers",
-                "location": "https://www.amazon.com/computer-pc-hardware-accessories-add-ons/b/ref=topnav_storetab_pc?ie=UTF8&node=541966"
-            },
-            "main_images": [
-                {
-                    "mm_name": "image",
-                    "location": "https://images-na.ssl-images-amazon.com/images/I/41egfCrHJyL._SX425_.jpg"
-                }
-            ],
-            "reviews": [
-                {
-                    "mm_name": "review",
-                    "rating": "5 stars",
-                    "description": "Great product!",
-                    "title": "Five Stars"
-                },
-                {
-                    "mm_name": "review",
-                    "rating": "5 stars",
-                    "description": "Very good machine!!! Very good vendor!",
-                    "title": "Five Stars"
-                }
-            ],
-            "companion_products": [
-                {
-                    "mm_name": "amazon_product",
-                    "location": "https://www.amazon.com/Lenovo-ThinkPad-Canada-Mexico-40A10090US/dp/B00G6T8EK2/ref=pd_sim_147_1?ie=UTF8&psc=1&refRID=WK7G552G2740VR1XW9W0",
-                    "title": "Lenovo ThinkPad Pro Dock 90 W US/Canada/Mexico (40A10090US)"
-                },
-                {
-                    "mm_name": "amazon_product",
-                    "location": "https://www.amazon.com/Kingston-Technology-1600MHz-PC3-12800-KVR16LS11/dp/B00CQ35HBQ/ref=pd_sim_147_2?ie=UTF8&psc=1&refRID=WK7G552G2740VR1XW9W0",
-                    "title": "Kingston Technology 8GB 1600MHz DDR3L (PC3-12800) 1.35V Non-ECC CL11 SODIMM Intel…"
-                },
-                {
-                    "mm_name": "amazon_product",
-                    "location": "https://www.amazon.com/Lenovo-ThinkPad-Link-Dock-4X10E52935/dp/B00H4PID8A/ref=pd_sim_147_3?ie=UTF8&psc=1&refRID=WK7G552G2740VR1XW9W0",
-                    "title": "Lenovo ThinkPad One Link Pro Dock (4X10E52935)"
-                },
-                {
-                    "mm_name": "amazon_product",
-                    "location": "https://www.amazon.com/ViewSonic-VX2457-MHD-DisplayPort-FreeSync-Technology/dp/B018MYTH9U/ref=pd_sim_147_4?ie=UTF8&psc=1&refRID=WK7G552G2740VR1XW9W0",
-                    "title": "ViewSonic VX2457-MHD 24-inch 1080p Gaming Monitor with 2ms, VGA, HDMI, DisplayPort and…"
-                },
-                {
-                    "mm_name": "amazon_product",
-                    "location": "https://www.amazon.com/Microsoft-Office-Home-Business-2016/dp/B0114ZV22E/ref=pd_sim_147_5?ie=UTF8&psc=1&refRID=WK7G552G2740VR1XW9W0",
-                    "title": "Microsoft Office Home and Business 2016 | PC Key Card"
-                },
-                {
-                    "mm_name": "amazon_product",
-                    "location": "https://www.amazon.com/Lenovo-ThinkPad-Ultra-Dock-40A20090US/dp/B00E0E2DIE/ref=pd_sim_147_6?ie=UTF8&psc=1&refRID=WK7G552G2740VR1XW9W0",
-                    "title": "Lenovo ThinkPad Ultra Dock 90W US (40A20090US)"
-                }
-            ]
-        }},
-        {
-        "amazon_product": {
             "location": "https://www.amazon.com/GL752VW-DH71-17-3-inch-GTX960M-Graphic-Windows/dp/B01578ZK9A",
             "mm_name": "amazon_product",
             "title": "ASUS ROG GL752VW-DH71 17.3-inch Gaming Laptop (Intel i7 2.6GHz, 16GB DDR4 RAM, 1TB HDD,  GTX960M 2GB Graphic Card, Windows 10)",
             "description": "Buy ASUS ROG GL752VW-DH71 17.3-inch Gaming Laptop (Intel i7 2.6GHz, 16GB DDR4 RAM, 1TB HDD, GTX960M 2GB Graphic Card, Windows 10): Everything Else - Amazon.com ✓ FREE DELIVERY possible on eligible purchases",
-            "price": "$1,095.91",
+            "price": "$1095.91",
             "overall_rating": "4.2 out of 5 stars",
             "text_keywords": "Asus",
             "department": {
@@ -3859,7 +3793,7 @@
                 }
             ],
             "title": "Lenovo ThinkPad P40 Yoga 20GQ - Flip design - Core i7 6600U / 2.6 GHz - Win 10 Pro 64-bit - 16 GB RAM - 512 GB SSD - 14\" IPS touchscreen 2560 x 1440 ( WQHD ) - Quadro M500M / HD Graphics 520 - 802.11a",
-            "price": "$2,089.99",
+            "price": "$2089.99",
             "description": "TARGET AUDIENCE: Enterprise, SMB, Professionals With a full PC experience and superior versatility, the ThinkPad 10 understands you don't like to compromise IS SOMEONE þ who wants to be creative on their terms þ who live a \"multi-mode\" life þ who wants a complete premium solution that adapts to their needs IS NOT SOMEONE ý who wants an inexpensive device that sacrifices quality and durability who wants two separate devices for sketching and CAD work who wants high power mobile workstation for highly complex assemblies.SpecificationsGeneral   Product Type:  Notebook - flip design   Operating System:  Windows 10 Pro 64-bit EditionProcessor / Chipset   CPU:  Intel Core i7 (6th Gen) 6600U / 2.6 GHz   Max Turbo Speed:  3.4 GHz   Number of Cores:  Dual-Core   Cache:  4 MB   64-bit Computing:  Yes   Platform Technology:  Intel vPro Technology   Features:  Integrated memory controllerMemory   RAM:  16 GB ( 1 x 16 GB )   Max RAM Supported:  16 GB   Technology:  DDR3L SDRAM   Speed:  1600 MHz / PC3L-12800   Form Factor:  SO-DIMM 204-pin   Slots Qty:  1   Empty Slots:  0Storage   Main Storage:  512 GB SSD   SSD Form Factor:  M.2   Interface:  SATA 6 Gb/sDisplay   Type:  14\" - IPS   LCD Backlight Technology:  LED backlight   Touchscreen:  Yes (10-point multi-touch)   Resolution:  2560 x 1440 ( WQHD )   Widescreen:  Yes   Image Aspect Ratio:  16:9   Image Brightness:  300 cd/m²   Features:  GlareAudio & Video   Multi-GPU Configuration:  1 single GPU card / integrated GPU   Graphics Processor:  NVIDIA Quadro M500M / Intel HD Graphics 520 - 2 GB   Camera:  Yes   Resolution:  720p   Sound:  Stereo speakers , two microphones   Codec:  CX11852   Compliant Standards:  High Definition Audio, Dolby Audio X2Input   Type:  Digitizer, TrackPoint, digital pen, UltraNav, backlit keyboard   Features:  Spill-resistant, multi-touch touchpad, buttonless touchpadCommunications   Wireless:  Bluetooth, 802.11ac   Wireless Controller:  Intel Dual Band Wireless-AC 8260 - M.2 CardBattery   Technology:  3-cell lithium polymer   Capacity:  53 Wh   Run Time:  Up to 8 hoursAC Adapter   Input:  AC 120/230 V ( 50/60 Hz )   Output:  65 WattConnections & Expansion   Interfaces:  3 x USB 3.0 ¦ Mini DisplayPort ¦ HDMI ¦ OneLink+ connector ¦ Headphone/microphone combo jack   Memory Card Reader:  4 in 1 ( SD Card, MultiMediaCard, SDHC Card, SDXC Card )Software   Software Included:  Lenovo Solution Center, Lenovo Companion, Lenovo Settings, McAfee LiveSafe (30 days trial), SHAREitMiscellaneous   Color:  Black   Case Material:  Carbon fiber   Integrated Options:  Ambient light sensor   Dockable:  Yes   Security:  Trusted Platform Module (TPM 1.2 and TPM 2.0) , fingerprint reader   Features:  Security lock slot (cable lock sold separately), administrator password, hard drive password, power-on password, Intel Active Management Technology (iAMT), 3D gyrometer, 3D accelerometer, 3D compass, MIL-STD-810G tested   Included Accessories:  Power adapter   Compliant Standards:  RoHS   Localization:  English   Manufacturer Selling Program:  TopSellerDimensions & Weight   Dimensions (WxDxH):  13.3 in x 9.3 in x 0.8 in   Weight:  3.97 lbsEnvironmental Standards   ENERGY STAR Qualified:  YesManufacturer Warranty   Service & Support:  Limited warranty - 1 year - pick-up and return",
             "favicon": {
                 "mm_name": "image",
@@ -3878,7 +3812,7 @@
                 }
             ],
             "title": "Dell Alienware 13 Gaming Laptop - Intel Corei7, 16GB DDR3L, 500GB HHD, 13.3\" Widescreen, 1920 x 1080, Windows 10 Home 64-Bit, Webcam - AW13R2-8900SLV",
-            "price": "$1,469.99",
+            "price": "$1469.99",
             "description": "Dell Alienware 13 Gaming Laptop \nIndulge into high performance gaming with the Dell Alienware 13 Gaming Laptop. This laptop sports a 2.5 GHz Core i7 processor with 16GB DDR3L RAM to give you path breaking performance. The 500GB HHD provides ample storage for all your favorite games and other files. The NVIDIA® GeForce® GTX Graphic Card gives you brilliant visuals on intensive games. You can get more connectivity with a built-in, powered, 4-port USB 3.0 hub for your favorite peripherals. Windows 10 Home 64-Bit OS comes preinstalled and runs all the popular games and applications. Moreover, the premium reinforced keyboard includes a metal plate built-in behind the keys, providing uniform feedback and responsiveness for all keys while typing. The machine also has an integrated webcam that facilitates better communication. Buy the power packed Dell Alienware 13 Gaming Laptop today!\n\nWhat It Is And Why You Need It:\n\n2.5GHz Core i7 Processor; superior processor for a better processing speed\n16GB DDR3L RAM; huge memory to run intensive games lag-free\n500GB HHD; large storage to keep all your files and games\nNVIDIA® GeForce® GTX Graphic Card; state-of art graphics from the masters themselves\nWindows 10 Home 64-Bit; runs all the popular games and applications with ease",
             "favicon": {
                 "mm_name": "image",
@@ -3916,7 +3850,7 @@
                 }
             ],
             "title": "HP ProBook 470 G3 - Core i7 6500U / 2.5 GHz - Win 10 Pro 64-bit / Win 7 Pro 64-bit downgrade - pre-installed: Win 7 Pro 64-bit - 16 GB RAM - 256 GB SSD - DVD SuperMulti - 17.3\" 1920 x 1080 ( Full HD )",
-            "price": "$1,015.99",
+            "price": "$1015.99",
             "description": "Built for productivity, the HP ProBook 470 delivers the performance and security features essential for today's workforce. The attractive and tough design provides professionals a flexible platform to stay productive in or out of the office.SpecificationsGeneral   Product Type:  Notebook   Operating System:  Windows 10 Pro 64-bit Edition / Windows 7 Professional 64-bit Edition downgrade   Preinstalled OS:  Microsoft Windows 7 Professional 64-bit EditionProcessor / Chipset   CPU:  Intel Core i7 (6th Gen) 6500U / 2.5 GHz   Max Turbo Speed:  3.1 GHz   Number of Cores:  Dual-Core   Cache:  4 MB   64-bit Computing:  Yes   Features:  Hyper-Threading Technology, Intel Turbo Boost Technology 2.0, Intel Smart CacheMemory   RAM:  16 GB ( 2 x 8 GB )   Max RAM Supported:  16 GB   Technology:  DDR4 SDRAM   Speed:  2133 MHz / PC4-17000   Form Factor:  SO-DIMM 260-pin   Slots Qty:  2   Empty Slots:  0Storage   Main Storage:  256 GB SSD   SSD Form Factor:  M.2   Interface:  SATA 6 Gb/s   Optical Drive:  DVD±RW (±R DL) / DVD-RAM - trayDisplay   Type:  17.3\"   LCD Backlight Technology:  LED backlight   Resolution:  1920 x 1080 ( Full HD )   Widescreen:  Yes   Image Aspect Ratio:  16:9   Image Brightness:  300 cd/m²   Features:  Full HD ultra wide-viewing angle (UWVA) eDP anti-glareAudio & Video   Graphics Processor:  Intel HD Graphics 520   Sound:  Stereo speakers , two microphones   Compliant Standards:  High Definition Audio, DTS Studio SoundInput   Type:  Touchpad, backlit keyboard   Features:  Spill-resistant, touchpad with gesture support, built-in numeric keypadCommunications   Wireless:  802.11ac, Bluetooth 4.2   Bluetooth Class:  Class 2   Wireless Controller:  Intel Dual Band Wireless-AC 3165 - PCI Express Mini Card (M.2)   Network Interface:  Gigabit Ethernet   Remote Management Protocol:  SNMP 2   Features:  Miracast, Wake-on-LAN (WOL)   Compliant Standards:  IEEE 802.3, IEEE 802.3u, IEEE 802.3i, IEEE 802.11, IEEE 802.1Q, IEEE 802.3ab, IEEE 802.1p, IEEE 802.3x, IEEE 802.1x, IEEE 802.11i, Wi-Fi CERTIFIED, IEEE 802.3azBattery   Technology:  4-cell lithium ion   Capacity:  44 WhAC Adapter   Input:  AC 120/230 V ( 50/60 Hz )   Output:  65 Watt , 19.5 VConnections & Expansion   Interfaces:  2 x USB 3.0 ¦ 2 x USB 2.0 ¦ HDMI ¦ Headphone/microphone combo jack ¦ LAN ¦ VGA   Memory Card Reader:  Yes ( SD Card, SDHC Card, SDXC Card )Software   Software Included:  Drivers & Utilities, CyberLink Power2Go, HP Recovery Disc Creator, Skype, LANDesk Management Suite, Microsoft Security Essentials, HP SoftPaq Download Manager, HP Recovery Manager, HP Support Assistant, Bing Toolbar, HP Connection Manager, HP ePrint, HP Hotkey Support, CyberLink YouCam BE, CyberLink PowerDVD BD Edition, Foxit PhantomPDF Express, InMiscellaneous   Security:  Trusted Platform Module (TPM) Security Chip   Features:  Security lock slot (cable lock sold separately), HP 3D DriveGuard, HP BIOS Protection, Automatic DriveLock, HP DriveLock, Master Record Security, Power On Authentication, Pre-Boot Security, 1 USB 2.0 charging port, Pre-boot Authentication   Included Accessories:  Power adapter   Compliant Standards:  ACPI, CSA, UL, VCCI, BSMI, GOST, SABS, CCC, FCC, RoHS, WEEE, A-Tick, ICES, KC, CIT   Localization:  English / United States   Manufacturer Selling Program:  HP Smart BuyDimensions & Weight   Dimensions (WxDxH):  16.4 in x 11.4 in x 1 in   Weight:  5.75 lbsEnvironmental Standards   ENERGY STAR Qualified:  YesManufacturer Warranty   Service & Support:  Limited warranty - parts and labor - 1 yearEnvironmental Parameters   Min Operating Temperature:  41 °F   Max Operating Temperature:  95 °F   Humidity Range Operating:  10 - 90% (non-condensing)   Shock Tolerance (operating):  40 g @ 2 ms half-sine pulse   Shock Tolerance (non-operating):  200 g @ 2 ms half-sine pulse   Vibration Tolerance (operating):  0.75 g @ RMS (random)   Vibration Tolerance (non-operating):  1.5 g @ RMS (random)",
             "favicon": {
                 "mm_name": "image",
@@ -3935,7 +3869,7 @@
                 }
             ],
             "title": "HP ProBook 470 G3 - Core i7 6500U / 2.5 GHz - Win 10 Pro 64-bit / Win 7 Pro 64-bit downgrade - pre-installed: Win 7 Pro 64-bit - 16 GB RAM - 256 GB SSD - DVD SuperMulti - 17.3\" 1920 x 1080 ( Full HD )",
-            "price": "$1,015.99",
+            "price": "$1015.99",
             "description": "Built for productivity, the HP ProBook 470 delivers the performance and security features essential for today's workforce. The attractive and tough design provides professionals a flexible platform to stay productive in or out of the office.SpecificationsGeneral   Product Type:  Notebook   Operating System:  Windows 10 Pro 64-bit Edition / Windows 7 Professional 64-bit Edition downgrade   Preinstalled OS:  Microsoft Windows 7 Professional 64-bit EditionProcessor / Chipset   CPU:  Intel Core i7 (6th Gen) 6500U / 2.5 GHz   Max Turbo Speed:  3.1 GHz   Number of Cores:  Dual-Core   Cache:  4 MB   64-bit Computing:  Yes   Features:  Hyper-Threading Technology, Intel Turbo Boost Technology 2.0, Intel Smart CacheMemory   RAM:  16 GB ( 2 x 8 GB )   Max RAM Supported:  16 GB   Technology:  DDR4 SDRAM   Speed:  2133 MHz / PC4-17000   Form Factor:  SO-DIMM 260-pin   Slots Qty:  2   Empty Slots:  0Storage   Main Storage:  256 GB SSD   SSD Form Factor:  M.2   Interface:  SATA 6 Gb/s   Optical Drive:  DVD±RW (±R DL) / DVD-RAM - trayDisplay   Type:  17.3\"   LCD Backlight Technology:  LED backlight   Resolution:  1920 x 1080 ( Full HD )   Widescreen:  Yes   Image Aspect Ratio:  16:9   Image Brightness:  300 cd/m²   Features:  Full HD ultra wide-viewing angle (UWVA) eDP anti-glareAudio & Video   Graphics Processor:  Intel HD Graphics 520   Sound:  Stereo speakers , two microphones   Compliant Standards:  High Definition Audio, DTS Studio SoundInput   Type:  Touchpad, backlit keyboard   Features:  Spill-resistant, touchpad with gesture support, built-in numeric keypadCommunications   Wireless:  802.11ac, Bluetooth 4.2   Bluetooth Class:  Class 2   Wireless Controller:  Intel Dual Band Wireless-AC 3165 - PCI Express Mini Card (M.2)   Network Interface:  Gigabit Ethernet   Remote Management Protocol:  SNMP 2   Features:  Miracast, Wake-on-LAN (WOL)   Compliant Standards:  IEEE 802.3, IEEE 802.3u, IEEE 802.3i, IEEE 802.11, IEEE 802.1Q, IEEE 802.3ab, IEEE 802.1p, IEEE 802.3x, IEEE 802.1x, IEEE 802.11i, Wi-Fi CERTIFIED, IEEE 802.3azBattery   Technology:  4-cell lithium ion   Capacity:  44 WhAC Adapter   Input:  AC 120/230 V ( 50/60 Hz )   Output:  65 Watt , 19.5 VConnections & Expansion   Interfaces:  2 x USB 3.0 ¦ 2 x USB 2.0 ¦ HDMI ¦ Headphone/microphone combo jack ¦ LAN ¦ VGA   Memory Card Reader:  Yes ( SD Card, SDHC Card, SDXC Card )Software   Software Included:  Drivers & Utilities, CyberLink Power2Go, HP Recovery Disc Creator, Skype, LANDesk Management Suite, Microsoft Security Essentials, HP SoftPaq Download Manager, HP Recovery Manager, HP Support Assistant, Bing Toolbar, HP Connection Manager, HP ePrint, HP Hotkey Support, CyberLink YouCam BE, CyberLink PowerDVD BD Edition, Foxit PhantomPDF Express, InMiscellaneous   Security:  Trusted Platform Module (TPM) Security Chip   Features:  Security lock slot (cable lock sold separately), HP 3D DriveGuard, HP BIOS Protection, Automatic DriveLock, HP DriveLock, Master Record Security, Power On Authentication, Pre-Boot Security, 1 USB 2.0 charging port, Pre-boot Authentication   Included Accessories:  Power adapter   Compliant Standards:  ACPI, CSA, UL, VCCI, BSMI, GOST, SABS, CCC, FCC, RoHS, WEEE, A-Tick, ICES, KC, CIT   Localization:  English / United States   Manufacturer Selling Program:  HP Smart BuyDimensions & Weight   Dimensions (WxDxH):  16.4 in x 11.4 in x 1 in   Weight:  5.75 lbsEnvironmental Standards   ENERGY STAR Qualified:  YesManufacturer Warranty   Service & Support:  Limited warranty - parts and labor - 1 yearEnvironmental Parameters   Min Operating Temperature:  41 °F   Max Operating Temperature:  95 °F   Humidity Range Operating:  10 - 90% (non-condensing)   Shock Tolerance (operating):  40 g @ 2 ms half-sine pulse   Shock Tolerance (non-operating):  200 g @ 2 ms half-sine pulse   Vibration Tolerance (operating):  0.75 g @ RMS (random)   Vibration Tolerance (non-operating):  1.5 g @ RMS (random)",
             "favicon": {
                 "mm_name": "image",
@@ -4020,7 +3954,7 @@
                 }
             ],
             "title": "MSI Prestige PE60 6QE 1268 Notebook PC - Intel Core i7 6300HQ Quad-Core Processor, 2.3GHz, Windows 10 Home, 8GB DDR4, 256GB SSD, 15.6\" 1920x1080 (Full HD) Display, USB 2.0, USB 3.0 - PE60 6QE-1268",
-            "price": "$1,003.00",
+            "price": "$1003.00",
             "description": "MSI Prestige PE60 6QE 1268 Notebook PC\nMSI Prestige PE60 6QE 1268 Notebook PC is the perfect laptop designed for professional graphic designers, game developers or even a casual gamer. It is powered by the Intel® Core™ i7-6300HQ Quad-Core Processor with a speed of 2.3GHz that assures high productivity and even the most demanding softwares or multitasking situations can be handled easily. It carries a 15.6” FHD (1920x1080) LED Backlit Display ensures you view crystal clear images and vibrant colors in high-definition. The MSI Prestige PE60 6QE 1268 Notebook PC is equipped with 8GB DDR4 SDRAM memory maintains a good system speed, prevents lags and slowdowns during intense work or entertainment sessions. The 256GB SSD gives enormous space for storing as well as retrieving critical data, important files, documents, downloads, multimedia, digital data etc. 2 Ports of USB 3.0 & 1 port of USB 2.0 ensure great connectivity. This laptop computer is equipped with Windows 10 Home 64-bit operating system that ensures you experience a user friendly interface. Purchase the MSI Prestige PE60 6QE 1267 Notebook PC right away!\n\nWhat It Is And Why You Need It:\n \nIntel® Core™ i7-6300HQ Quad-Core Processor; ensures high productivity \n15.6” FHD display; lets you see crystal clear images & vibrant colors\n8GB DDR4 SDRAM memory; maintains a good system speed\n256GB SSD storage; gives enough room to store important data & multimedia\nUSB 2.0 & USB 3.0 ports; ensure great connectivity\nWindows 10 Home 64-bit operating system; lets you experience a user friendly interface",
             "favicon": {
                 "mm_name": "image",
@@ -4049,23 +3983,50 @@
             "text_keywords": "CX72 6QD-208US,MSI,tigerdirect.com",
             "location": "http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=3436938&CatId=17",
             "mm_name": "tigerdirect_product"    }}
-    ]
-    var profile = {
-        "mRAM": 0,   
-        "mCPU": 0,
-        "mWEIGHT": 0,
-        "mREVIEW": 0,
-        "mPRICE":  0,
-        "mBATT": 0,
-        "reviewRange": 0,
-        "brand": ""
+    ];
+    var profile = JSON.parse(localStorage.getItem("profile"));
+    var laptops = JSON.parse(localStorage.getItem("laptops"));
+    if(laptops == null){
+         laptops = makeLaptopArray(productList);
     }
-    profile = JSON.parse(localStorage.getItem("profile"));
+    if(profile == null){
+         profile = {
+            "mRAM": 0,   
+            "mCPU": 0,
+            "mWEIGHT": 0,
+            "mREVIEW": 0,
+            "mPRICE":  0,
+            "mBATT": 0,
+            "brand": "",
+            "reviewRange":{
+                "low": 1,
+                "high": 5
+            },
+            "priceRange":{
+                "low": 100,
+                "high": 2000
+            },
+            "batteryRange":{
+                "low": 3,
+                "high": 10
+            },
+            "weightRange":{
+                "low": 1,
+                "high": 10
+            } 
+        };
+    }
+    localStorage.setItem("laptops", JSON.stringify(laptops));
+    localStorage.setItem("profile", JSON.stringify(profile));
+
+    
 $(document).ready(function() {
 
     $('#spidergraphcontainer').spidergraph({
         'fields': ['RAM','CPU','Weight','Reviews','Price', 'Battery'],
+        'increments': 5,
         'gridcolor': 'rgba(255,255,255,0.5)'   
+        
     });
     
     $('#spidergraphcontainer').spidergraph('resetdata');
@@ -4073,7 +4034,7 @@ $(document).ready(function() {
     $('#spidergraphcontainer').spidergraph('setactivedata', { 
         'strokecolor': 'rgba(99,0,0,0.0)',
         'fillcolor': 'rgba(149,0,0,0.6)',
-        'data': [1, 2, 3, 4, 5, 6],
+        'data': [profile.mRAM, profile.mCPU, profile.mWEIGHT,profile.mREVIEW, profile.mPRICE,profile.mBATT],
 		'linear': true
     });
 
@@ -4086,22 +4047,198 @@ $(document).ready(function() {
         profile.mBATT = data[5];
         // Store
         localStorage.setItem("profile", JSON.stringify(profile));
-        // Retrieve
-        console.log(data);
     });
 
 });
 
 //sets a bsWrapper's (a laptop) rank based off current facets
 function setRank(laptop, profile){
-
+    var rank = 0;
+    rank += (laptop.RAM *100) * Math.pow(10, profile.mRAM);
+    rank += (laptop.CPU*300) * Math.pow(10, profile.mCPU);
+    rank += (laptop.weight *100) * Math.pow(10, profile.mWEIGHT);
+    rank += (laptop.battery*100) * Math.pow(10, profile.mBATT);
+    rank += (laptop.rating*200) * Math.pow(10, profile.mREVIEW);
+    rank += (2000 -laptop.price) * Math.pow(10, profile.mPRICE);
+    laptop.rank = rank;
+    return rank;
+}
+function setAllRanks(laptopArray, profile){
+    for(var i = 0; i <laptopArray.length; i++){
+        setRank(laptopArray[i], profile);
+    }
+    localStorage.setItem("laptops", JSON.stringify(laptops));
 }
 //takes in bigsemantic entry and returns an object that wraps the laptop
 function parseInfo(bsEntry){
+    var newLaptop = {
+        "price": 0,
+        "RAM": 0,
+        "CPU": 0,
+        "rating": 0,
+        "harddrive": 0,
+        "battery": 0,
+        "image_addr": "",
+        "type": "",
+        "reviews": {},
+        "title": "",
+        "weight": 0,
+        "rank": 0
+    };
+    if(bsEntry.hasOwnProperty('amazon_product')){
+        var str = bsEntry.amazon_product.title + " " + bsEntry.amazon_product.description;
+        newLaptop.title =  bsEntry.amazon_product.title;
+        var newS = /\d+( GB|GB)(.*?)(RAM|MEMORY)/i.exec(str);
+        var newD = parseInt(/\d+/.exec(newS));
+        newLaptop.RAM = parseInt(newD);
+        if(!(newLaptop.RAM > 0) || newLaptop.RAM > 50){
+            newLaptop.RAM = 4;
+        }
 
+        newS = /[-+]?[0-9]*\.?[0-9]*( Ghz|Ghz)/i.exec(str);
+        newD = /[-+]?[0-9]*\.?[0-9]*/.exec(newS);
+        newLaptop.CPU = parseFloat(newD);
+        if(!(newLaptop.CPU > 0)){
+            newLaptop.CPU = 2.4;
+        }
+
+        newS = /\d+( TB|TB| GB|GB) (HDD|Harddrive|HD|SSD| SSD)/i.exec(str);
+        if(newS != NaN & newS != null){
+            if(newS[0].indexOf("TB") !== -1){
+                newD = parseInt(/\d+/.exec(newS));
+                newD = newD*1000;
+            } else{
+                newD = parseInt(/\d+/.exec(newS));
+            }
+            newLaptop.harddrive = newD;
+        }
+
+        if(!(newLaptop.harddrive > 0)){
+            newLaptop.harddrive = 500;
+        }
+
+        newLaptop.battery = 3 + Math.random()*5;
+
+        newLaptop.price = parseFloat(bsEntry.amazon_product.price.replace("$",""));
+
+        newLaptop.rating = parseFloat(/[-+]?[0-9]*\.?[0-9]*/.exec(bsEntry.amazon_product.overall_rating));
+
+        newLaptop.image_addr = bsEntry.amazon_product.main_images[0].location;
+
+        newLaptop.reviews = bsEntry.amazon_product.reviews;
+        var reviewStr = "";
+        if(newLaptop.reviews != null){
+            for(var i = 0; i < newLaptop.reviews.length; i++){
+                reviewStr += newLaptop.reviews[i].description;
+            }
+            if(reviewStr.indexOf("light") !== -1){
+                newLaptop.weight = 10;
+            } else if(reviewStr.indexOf("heavy") !== -1) {
+                newLaptop.weight = -10;
+            } else newLaptop.weight = 0;
+        } else newLaptop.weight = 0;
+        newLaptop.type = 'amazon_product';
+        return newLaptop;
+    }
+    else if(bsEntry.hasOwnProperty('newegg_product')){
+        var str = bsEntry.newegg_product.title + " " + bsEntry.newegg_product.description;
+        newLaptop.title =  bsEntry.newegg_product.title;
+        var newS = /\d+( GB|GB)(.*?)(RAM|MEMORY)/i.exec(str);
+        var newD = parseInt(/\d+/.exec(newS));
+          newLaptop.type = 'newegg_product';
+        newLaptop.RAM = parseInt(newD);
+        if(!(newLaptop.RAM > 0) || newLaptop.RAM > 50){
+            newLaptop.RAM = 4;
+        }
+        
+        newS = /[-+]?[0-9]*\.?[0-9]*( Ghz|Ghz)/i.exec(str);
+        newD = /[-+]?[0-9]*\.?[0-9]*/.exec(newS);
+        newLaptop.CPU = parseFloat(newD);
+        if(!(newLaptop.CPU > 0)){
+            newLaptop.CPU = 2.4;
+        }
+
+        newS = /\d+( TB|TB| GB|GB) (HDD|Harddrive|HD|SSD| SSD)/i.exec(str);
+        if(newS[0].indexOf("TB") !== -1){
+            newD = parseInt(/\d+/.exec(newS));
+            newD = newD*1000;
+        } else{
+            newD = parseInt(/\d+/.exec(newS));
+        }
+        newLaptop.harddrive = newD;
+        if(!(newLaptop.harddrive > 0)){
+            newLaptop.harddrive = 500;
+        }
+
+        newLaptop.battery = 3 + Math.random()*5;
+
+        newLaptop.price = newLaptop.battery * 30 + newLaptop.CPU * 100 + newLaptop.RAM * 50 + newLaptop.harddrive/4;
+
+        newLaptop.rating = parseFloat(/[-+]?[0-9]*\.?[0-9]*/.exec(bsEntry.newegg_product.overall_rating.ratingValue));
+
+        newLaptop.image_addr = "None for newegg..."
+
+        newLaptop.reviews = bsEntry.newegg_product.reviews;
+        return newLaptop;
+    }
+    else {
+        var str = bsEntry.tigerdirect_product.title + " " + bsEntry.tigerdirect_product.description;
+        newLaptop.title = bsEntry.tigerdirect_product.title;
+        var newS = /\d+( GB|GB)(.*?)(RAM|MEMORY)/i.exec(str);
+        var newD = parseInt(/\d+/.exec(newS));
+        newLaptop.type = 'tigerdirect_product';
+        newLaptop.RAM = parseInt(newD);
+        if(!(newLaptop.RAM > 0) || newLaptop.RAM > 50){
+            newLaptop.RAM = 4;
+        }
+
+        newS = /[-+]?[0-9]*\.?[0-9]*( Ghz|Ghz)/i.exec(str);
+        newD = /[-+]?[0-9]*\.?[0-9]*/.exec(newS);
+        newLaptop.CPU = parseFloat(newD);
+        if(!(newLaptop.CPU > 0)){
+            newLaptop.CPU = 2.4;
+        }
+
+          newS = /\d+( TB|TB| GB|GB) (HDD|Harddrive|HD|SSD| SSD)/i.exec(str);
+        if(newS != NaN & newS != null){
+            if(newS[0].indexOf("TB") !== -1){
+                newD = parseInt(/\d+/.exec(newS));
+                newD = newD*1000;
+            } else{
+                newD = parseInt(/\d+/.exec(newS));
+            }
+            newLaptop.harddrive = newD;
+        }
+
+        if(!(newLaptop.harddrive > 0)){
+            newLaptop.harddrive = 500;
+        }
+
+        newLaptop.battery = 3 + Math.random()*5;
+
+        newLaptop.price = parseFloat(bsEntry.tigerdirect_product.price.replace("$",""));
+
+        newLaptop.rating = 0;
+
+        newLaptop.image_addr = bsEntry.tigerdirect_product.main_images[0].location;
+
+        newLaptop.reviews = {}
+
+        return newLaptop;
+    }
 }
 
-//returns best 5 laptops based rankings (must call setRank on all)
-function getBestFive(laptopArray){
+function makeLaptopArray(bsEntries){
+    var laptops = [];
+    for(var i = 0; i < bsEntries.length; i++){
+        laptops.push(parseInfo(bsEntries[i]));
+    }
+    return laptops;
+}
 
+//sorts laptop array based on preset rank
+function sortArrayByRank(laptopArray){
+    laptopArray.sort(function(a,b){
+        return  b.rank - a.rank;
+    });
 }
