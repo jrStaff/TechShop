@@ -37,11 +37,11 @@ ul {
 #intro {
 	background-image: url('../images/intro-bg.jpg');
 	background-attachment: cover;
-	height: 100%;
+	height: 1000px;
 }
 
 #intro-logo {
-	padding-top: 200px;
+	padding-top: 100px;
 	text-align: center;
 	margin: auto;
 }
@@ -269,6 +269,11 @@ h3 {
 	width: 30%;
 	margin-left: 3%;
 	float: left;
+}
+
+.product-details {
+padding: 30px;
+background-color: #eee;
 }
 
 #footer {
