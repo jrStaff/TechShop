@@ -3986,10 +3986,10 @@
     ];
     var profile = JSON.parse(localStorage.getItem("profile"));
     var laptops = JSON.parse(localStorage.getItem("laptops"));
-    if(laptops == null){
+    if(laptops === null){
          laptops = makeLaptopArray(productList);
     }
-    if(profile == null){
+    if(profile === null){
          profile = {
             "mRAM": 0,   
             "mCPU": 0,
@@ -4088,10 +4088,8 @@ function parseInfo(bsEntry){
         "rank": 0
     };
     if(bsEntry.hasOwnProperty('amazon_product')){
-        var str = bsEntry.amazon_product.title + " " + bsEntry.amazon_product.description;
-        console.log(str);  
+        var str = bsEntry.amazon_product.title + " " + bsEntry.amazon_product.description;  
         newLaptop.description = bsEntry.amazon_product.description.substring(0,70);
-        console.log(bsEntry.amazon_product.description);
         newLaptop.title =  bsEntry.amazon_product.title;
         var newS = /\d+( GB|GB)(.*?)(RAM|MEMORY)/i.exec(str);
         var newD = parseInt(/\d+/.exec(newS));
@@ -4148,7 +4146,7 @@ function parseInfo(bsEntry){
     else if(bsEntry.hasOwnProperty('newegg_product')){
         var str = bsEntry.newegg_product.title + " " + bsEntry.newegg_product.description;
         newLaptop.title =  bsEntry.newegg_product.title;
-        newLaptop.description = bsEntry.newegg_product.description.substring(0,70);
+        newLaptop.description = bsEntry.newegg_product.description.toString().substring(0,70);
         var newS = /\d+( GB|GB)(.*?)(RAM|MEMORY)/i.exec(str);
         var newD = parseInt(/\d+/.exec(newS));
           newLaptop.type = 'newegg_product';
