@@ -87,3 +87,15 @@ weightSlider.noUiSlider.on('set.one', function(){
     profile.weightRange.high = weightSlider.noUiSlider.get()[1];
     localStorage.setItem("profile", JSON.stringify(profile));
 });
+
+var globalDOMLaptops = 0;
+var showLaptops = {};
+
+function addLaptopToDOM(laptop){
+    globalDOMLaptops += 1;
+    var element =document.getElementById('products');
+    var html = $('<div class="close"></div><li class="product' + globalDOMLaptops+ '><img src="'+ laptop.image_addr +'"></img><div class="product-content"><h3>'+ laptop.title +'</h3><p>' + laptop.description + '</p></div></li><div class="dig-it-button">I can <strong>Dig</strong> it</div><div class="break"></div>');
+    element.appendChild(html);
+    var laptopHTML = document.getElementById('product'+globalDOMLaptops);
+    laptopHTML.getElementsByTagName('img');
+}
