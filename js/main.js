@@ -4060,6 +4060,7 @@ function setRank(laptop, profile){
     rank += (laptop.battery*100) * Math.pow(10, profile.mBATT);
     rank += (laptop.rating*200) * Math.pow(10, profile.mREVIEW);
     rank += (2000 -laptop.price) * Math.pow(10, profile.mPRICE);
+    if(laptop)
     laptop.rank = rank;
     return rank;
 }
@@ -4083,10 +4084,14 @@ function parseInfo(bsEntry){
         "reviews": {},
         "title": "",
         "weight": 0,
+        "description": "",
         "rank": 0
     };
     if(bsEntry.hasOwnProperty('amazon_product')){
         var str = bsEntry.amazon_product.title + " " + bsEntry.amazon_product.description;
+        console.log(str);  
+        newLaptop.description = bsEntry.amazon_product.description.substring(0,70);
+        console.log(bsEntry.amazon_product.description);
         newLaptop.title =  bsEntry.amazon_product.title;
         var newS = /\d+( GB|GB)(.*?)(RAM|MEMORY)/i.exec(str);
         var newD = parseInt(/\d+/.exec(newS));
@@ -4143,6 +4148,7 @@ function parseInfo(bsEntry){
     else if(bsEntry.hasOwnProperty('newegg_product')){
         var str = bsEntry.newegg_product.title + " " + bsEntry.newegg_product.description;
         newLaptop.title =  bsEntry.newegg_product.title;
+        newLaptop.description = bsEntry.newegg_product.description.substring(0,70);
         var newS = /\d+( GB|GB)(.*?)(RAM|MEMORY)/i.exec(str);
         var newD = parseInt(/\d+/.exec(newS));
           newLaptop.type = 'newegg_product';
@@ -4184,6 +4190,7 @@ function parseInfo(bsEntry){
     else {
         var str = bsEntry.tigerdirect_product.title + " " + bsEntry.tigerdirect_product.description;
         newLaptop.title = bsEntry.tigerdirect_product.title;
+        newLaptop.description = bsEntry.tigerdirect_product.description.substring(0,70);
         var newS = /\d+( GB|GB)(.*?)(RAM|MEMORY)/i.exec(str);
         var newD = parseInt(/\d+/.exec(newS));
         newLaptop.type = 'tigerdirect_product';

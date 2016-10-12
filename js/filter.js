@@ -90,12 +90,16 @@ weightSlider.noUiSlider.on('set.one', function(){
 
 var globalDOMLaptops = 0;
 var showLaptops = {};
+var digitLaptops = {};
 
 function addLaptopToDOM(laptop){
     globalDOMLaptops += 1;
-    var element =document.getElementById('products');
-    var html = $('<div class="close"></div><li class="product' + globalDOMLaptops+ '><img src="'+ laptop.image_addr +'"></img><div class="product-content"><h3>'+ laptop.title +'</h3><p>' + laptop.description + '</p></div></li><div class="dig-it-button">I can <strong>Dig</strong> it</div><div class="break"></div>');
-    element.appendChild(html);
-    var laptopHTML = document.getElementById('product'+globalDOMLaptops);
-    laptopHTML.getElementsByTagName('img');
+    console.log(laptop);
+    var element = $('#products');
+    var html = $('<div class="close" id="'+globalDOMLaptops+'"></div><li class="product" id ="'+ globalDOMLaptops +'"><img src="'+ laptop.image_addr +'"></img><div class="product-content"><h3>'+ laptop.title +'</h3><p>' + laptop.description + '</p></div></li><div class="dig-it-button" id="btn'+globalDOMLaptops+'">I can <strong>Dig</strong> it</div><div class="break"></div>');
+    element.append(html);
+    $('#btn'+globalDOMLaptops).live('click', function(e) { 
+        console.log("Hello");
+        //digitLaptops.push(showLaptops[0]);
+    });
 }
