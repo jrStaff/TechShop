@@ -194,6 +194,7 @@
 	background: #AAA;
 }
 
+
 /* Horizontal layout;
  *
  */
@@ -253,9 +254,10 @@
 	display: block;
 	position: absolute;
 	border-radius: 3px;
-	color: #ddd;
+	color: #aaa;
 	padding: 5px;
 	text-align: center;
+	width: 100px;
 }
 .noUi-horizontal .noUi-tooltip {
 -webkit-transform: translate(-50%, 0);

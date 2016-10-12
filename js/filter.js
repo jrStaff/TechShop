@@ -2,7 +2,7 @@ var profile = JSON.parse(localStorage.getItem("profile"));
 if(profile == null) alert("Set some profile information on profile page up first!");
 var reviewsSlider = document.getElementById('reviews-toggle');
 noUiSlider.create(reviewsSlider, {
-    start: [profile.reviewRange.low, profile.batteryRange.high],
+    start: [profile.reviewRange.low, profile.reviewRange.high],
     step: 1,
     connect: true,
     tooltips: [ true, true ],
