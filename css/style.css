@@ -54,7 +54,6 @@ ul {
 	width: 150px;
 	line-height: 50px;
 	box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
-
 }
 
 #intro-button:hover {
@@ -62,11 +61,6 @@ ul {
 	transition-duration: 0.5s;
 	
 }
-
-
-
-
-
 /*Header*/
 #header {
 	height: 60px;
@@ -88,7 +82,7 @@ ul {
 	margin: 0 auto 0 auto;
 	padding: 0;
 	border-bottom: 4px solid rgba(255,255,255,0.3);
-	width: 600px;
+	width: 650px;
 }
 
 #nav li {
@@ -98,7 +92,7 @@ ul {
 	font-size: 18px;
 	font-weight:100;
 	line-height: 55px;
-	padding: 23px 30px 16px 30px;
+	padding: 23px 30px 17px 30px;
 	width: 150px;
 	margin-right: -4px;
 
@@ -222,7 +216,7 @@ facets ul,li {
 }
 
 .product-content {
-	padding: 20px 100px 0 0;
+	padding: 20px 100px 20px 0;
 	
 }
 
@@ -273,12 +267,9 @@ h3 {
 
 .comp-product {
 	width: 30%;
+	margin-left: 3%;
 	float: left;
-	margin: auto;
-	
-	
 }
-
 
 #footer {
 	margin-top: 100px;
@@ -288,10 +279,5 @@ h3 {
 	padding: 0px 30px;
 	border-top: 1px solid rgba(255,255,255,0.1);
 	bottom:0;
-
-	
-
-
-	
 }
 
