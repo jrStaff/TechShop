@@ -1,3 +1,4 @@
+
 var profile = JSON.parse(localStorage.getItem("profile"));
 if(profile == null) alert("Set some profile information on profile page up first!");
 var reviewsSlider = document.getElementById('reviews-toggle');
@@ -98,14 +99,14 @@ var laptops = JSON.parse(localStorage.getItem("laptops"));
 if(laptops == null){
     laptops = makeLaptopArray(productList);
 }  
-localStorage.setItem('digitLaptops', digitLaptops);
-localStorage.setItem('showLaptops', showLaptops);
+localStorage.setItem('digitLaptops', JSON.stringify(digitLaptops));
+localStorage.setItem('showLaptops', JSON.stringify(showLaptops));
 
 function addLaptopToDOM(laptop){
     globalDOMLaptops += 1;
     console.log(laptop);
     var element = $('#products');
-    var html = $('<div id="'+globalDOMLaptops+'master><div class="close" id="'+globalDOMLaptops+'close"></div><li class="product" id ="'+ globalDOMLaptops +'product"><img src="'+ laptop.image_addr +'"></img><div class="product-content"><h3>'+ laptop.title +'</h3><p>' + laptop.description + '</p></div></li><div class="dig-it-button" id="btn'+globalDOMLaptops+'">I can <strong>Dig</strong> it</div><div class="break" id="'+globalDOMLaptops+'break></div></div>');
+    var html = $('<div id="'+globalDOMLaptops+'master><div class="close" id="'+globalDOMLaptops+'close"></div><li class="product" id ="'+ globalDOMLaptops +'product"><img src="'+laptop.image_addr +'"></img><div class="product-content"><h3>'+ laptop.title +'</h3><p>' + laptop.description + '</p></div></li><div class="dig-it-button" id="btn'+globalDOMLaptops+'">I can <strong>Dig</strong> it</div><div class="break" id="'+globalDOMLaptops+'break></div></div>');
     element.append(html);
 
     showLaptops.push(laptop);
@@ -116,8 +117,9 @@ function addLaptopToDOM(laptop){
          $('#'+num+'close').remove();
          $('#'+num+'break').remove();
          $('#btn'+num).remove();
+         console.log(showLaptops[0]);
         digitLaptops.push(showLaptops[num]);
-        localStorage.setItem('digitLaptops', digitLaptops);
+        localStorage.setItem('digitLaptops', JSON.stringify(digitLaptops));
         console.log("Digged it!");
     });
     $('#'+globalDOMLaptops).live('click', function(e) { 
@@ -138,7 +140,7 @@ function removeDOMLaptops(){
          $('#'+i+'break').remove();
     }   
     globalDOMLaptops = 0;
-    localStorage.setItem('showLaptops', []);
+    localStorage.setItem('showLaptops', JSON.stringify([]));
 }
 function flatten(ary) {
     var ret = [];
@@ -174,10 +176,11 @@ function fillandDisplayShowLaptops(){
         console.log(parseFloat(currLap.price)) ;
         console.log(parseFloat(profile.priceRange.high.replace(/,/g, '')));
     }
-    localStorage.setItem("showLaptops", showLaptops);
+    localStorage.setItem("showLaptops", JSON.stringify(showLaptops));
     if(showLaptops === []){
         alert("Your search is too refined! No laptops found.");
     }
 }
-fillandDisplayShowLaptops();
-
+window.onload = function() {
+  fillandDisplayShowLaptops();
+};

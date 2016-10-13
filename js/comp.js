@@ -1,4 +1,5 @@
 
+var digitLaptops = JSON.parse(localStorage.getItem('digitLaptops'));
 $('#spidergraphcomparison').spidergraph({
         'fields': ['RAM','CPU','Low Weight','Good Reviews','Lower Price', 'Battery Life'],
         'increments': 5,
