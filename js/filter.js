@@ -106,7 +106,7 @@ function addLaptopToDOM(laptop){
     globalDOMLaptops += 1;
     console.log(laptop);
     var element = $('#products');
-    var html = $('<div id="'+globalDOMLaptops+'master><div class="close" id="'+globalDOMLaptops+'close"></div><li class="product" id ="'+ globalDOMLaptops +'product"><img src="'+laptop.image_addr +'"></img><div class="product-content"><h3>'+ laptop.title +'</h3><p>' + laptop.description + '</p></div></li><div class="dig-it-button" id="btn'+globalDOMLaptops+'">I can <strong>Dig</strong> it</div><div class="break" id="'+globalDOMLaptops+'break></div></div>');
+    var html = $('<div id="'+globalDOMLaptops+'master><div class="close" id="'+globalDOMLaptops+'close"></div><li class="product" id ="'+ globalDOMLaptops +'product"><img src="'+laptop.image_addr +'"></img><div class="product-content"><h3>'+ laptop.title +'</h3><p>' + laptop.description + '</p><p>' + laptop.price +'$</p><p> '+ laptop.rating+' stars out of 5</p></div></li><div class="dig-it-button" id="btn'+globalDOMLaptops+'">I can <strong>Dig</strong> it</div><div class="break" id="'+globalDOMLaptops+'break></div></div>');
     element.append(html);
 
     showLaptops.push(laptop);
