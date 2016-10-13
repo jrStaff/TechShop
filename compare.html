@@ -10,12 +10,13 @@
 		<script src="js/paper-full.js"></script>
 		
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
-   
+   		<script src="js/main.js"></script>
+    	<script src="js/comp.js"></script>
 
 
 
    </head>
-    <body>
+    <body onload="addAllDigged();">
 	<script src="js/nouislider.min.js"></script>
 
 	
@@ -49,33 +50,7 @@
 		
 		
 	<div id="compare">
-		<div class="comp-product">
-			<canvas id="canvas" style="background-image: url('images/laptop.jpg'); width: 400px; height: 300px; background-size: cover"></canvas>
-				<div style="background-color: rgba(0,0,0,0.2); height: 300px; width: 400px;">
-					<div id="comp-spidergraphcontainer">
-
-					</div>
-				<div class="product-details">efeffe</div>
-
-					
-			</div>
-		</div>
-		<div class="comp-product">
-			<canvas id="canvas" style="background-image: url('images/laptop.jpg'); width: 400px; height: 300px; background-size: cover"></canvas>
-				<div style="background-color: rgba(0,0,0,0.2); s: 300px; width: 400px;">
-					<div id="comp-spidergraphcontainer">
- 
-				</div>	
-			</div>				
-		</div>
-		<div class="comp-product">
-			<canvas id="canvas" style="background-image: url('images/laptop.jpg'); width: 400px; height: 300px; background-size: cover"></canvas>
-				<div style="background-color: rgba(0,0,0,0.2); height: 300px; width: 400px;">
-					<div id="comp-spidergraphcontainer">
- 
-				</div>	
-			</div>				
-		</div>
+	</div>
 	
 	</div>
 	<div style="clear: both"></div>
@@ -87,13 +62,7 @@
 	
 	
 	</div>
-	
 
-	
-
-	
-	
-    <script src="js/main.js"></script>
 	<script type="text/paperscript" canvas="canvas">
 	
 	function onMouseDown(event) {
@@ -108,12 +77,8 @@ function onMouseDrag(event) {
 	//var date = new Date();
 	//var timesample = date.getTime();
 	//t.push(timesample);	
-}
-
-	
+}	
 	</script>
-	
 
-	
     </body>
 </html>

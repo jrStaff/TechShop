@@ -61,19 +61,6 @@ ul {
 	transition-duration: 0.5s;
 	
 }
-
-.label {
-
-	line-height: 50px;
-	width: 140px;
-	padding: 0 20px 0 20px;
-	height: 50px;
-	color: #fff;
-	font-family: 'Roboto', Sans-serif;
-	text-transform: uppercase;
-}
-
-
 /*Header*/
 #header {
 	height: 60px;
@@ -158,69 +145,17 @@ ul {
 }
 /*Spider*/
 #spidergraphcontainer {
-	background-color: rgba(0,0,0,0.3);
 	
     width: 600px;
     height: 600px;
 	position: relative;
     margin: 0 auto 0 auto;
     color: #fff;
-	font-family: 'Roboto', sans-serif;
+	font-family: sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
-	float: left;
-	margin-left: 90px;
 	
 }
-
-#spidergraphcomparison {
-    width: 600px;
-    height: 600px;
-	position: relative;
-    margin: 0 auto 0 auto;
-    color: #fff;
-	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
-	text-transform: uppercase;
-	margin-bottom: 60px;
-}
-
-#product1 {
-    width: 300px;
-    height: 300px;
-	position: relative;
-    color: #ddd;
-	font-family: 'Roboto', sans-serif;
-	font-size: 12px;
-	text-transform: uppercase;
-	text-align: center;
-	margin-left: 60px;
-}
-#product2 {
-    width: 300px;
-    height: 300px;
-	position: relative;
-    color: #ddd;
-	font-family: 'Roboto', sans-serif;
-	font-size: 12px;
-	text-transform: uppercase;
-	text-align: center;
-	margin-left: 60px;
-}
-#product3 {
-    width: 300px;
-    height: 300px;
-	position: relative;
-    color: #ddd;
-	font-family: 'Roboto', sans-serif;
-	font-size: 12px;
-	text-transform: uppercase;
-	text-align: center;
-	margin-left: 60px;
-}
-
-
-
 
 #spidergraphcontainer:hover {
 	cursor: pointer;
@@ -228,8 +163,10 @@ ul {
 }
 
 #comp-spidergraphcontainer {
+	
     width: 300px;
     height: 300px;
+
 }
 
 
@@ -283,10 +220,6 @@ facets ul,li {
 	
 }
 
-.product-content p{
-	color: #999;
-}
-
 h3 {
 	color: #222;
 	font-size: 24px;
@@ -336,12 +269,6 @@ h3 {
 	width: 30%;
 	margin-left: 3%;
 	float: left;
-	margin-bottom: 200px;
-}
-
-
-.comp-product p{
-	color: #666;
 }
 
 .product-details {
@@ -359,3 +286,6 @@ background-color: #eee;
 	bottom:0;
 }
 
+#compare p {
+	color: #770000;
+}
