@@ -30,7 +30,7 @@ noUiSlider.create(priceSlider, {
     tooltips: [ true, true ],
     range: {
         'min': [100],
-        'max': [2000]
+        'max': [2200]
     },
         format: wNumb({
         decimals: 0,
@@ -162,20 +162,22 @@ function fillandDisplayShowLaptops(){
     for(var i = 0; i < newLaptops.length; i++){
         currLap = newLaptops[i];
 
-         if(/*currLap.rating > profile.reviewRange.low && */
-        // currLap.rating < profile.reviewRange.high &&
-        // currLap.battery > profile.batteryRange.low &&
-         currLap.battery < parseFloat(profile.priceRange.low.replace(/ Lbs/g, ''))  &&
+         if(currLap.rating > profile.reviewRange.low && 
+         currLap.rating < profile.reviewRange.high &&
+        // currLap.battery > parseFloat(profile.batteryRange.low.replace(/,/g, '') &&
+         //currLap.battery < parseFloat(profile.priceRange.low.replace(/ Lbs/g, ''))  &&
          currLap.price > parseFloat(profile.priceRange.low.replace(/,/g, '')) &&
-        currLap.price < parseFloat(profile.priceRange.high.replace(/,/g, ''))){
+         currLap.price < parseFloat(profile.priceRange.high.replace(/,/g, ''))){
             showLaptops.push(currLap);
             addLaptopToDOM(currLap);  
         }
-        console.log(currLap.price + " " + profile.priceRange.high);
+        console.log(parseFloat(currLap.price)) ;
+        console.log(parseFloat(profile.priceRange.high.replace(/,/g, '')));
     }
     localStorage.setItem("showLaptops", showLaptops);
     if(showLaptops === []){
         alert("Your search is too refined! No laptops found.");
     }
 }
+fillandDisplayShowLaptops();
 
