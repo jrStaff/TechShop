@@ -12,8 +12,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
    
 
-
-
+ 
    </head>
     <body>
 	<script src="js/nouislider.min.js"></script>
@@ -41,7 +40,7 @@
 		<div id="directions">
 			<h4>Compare the laptops. Feel free to remove or add laptops at any point</h4>
 		</div>
-			<div id="spidergraphcontainer">
+			<div id="spidergraphcomparison">
 		</div>
 
 
@@ -50,37 +49,73 @@
 		
 	<div id="compare">
 		<div class="comp-product">
-			<canvas id="canvas" style="background-image: url('images/laptop.jpg'); width: 400px; height: 300px; background-size: cover"></canvas>
-				<div style="background-color: rgba(0,0,0,0.2); height: 300px; width: 400px;">
-					<div id="comp-spidergraphcontainer">
- 
+				<div class="label" style="background-color: rgba(30,104,230,0.8)">Best Specs</div>
+				<div style="background-color: rgba(0,0,0,0.4); height: 300px; width: 400px;">
+				<div class="close"></div>
+				<div id="comp-spidergraphcontainer">
+							<div id="product1"></div>
 					</div>
+				</div>
+			<canvas id="canvas" style="background-image: url('images/laptop.jpg'); width: 400px; height: 300px; background-size: cover"></canvas>
 				
+			<div style="background-color: rgba(0,0,0,0.2); height: 300px; width: 400px;">
+				<div class="product-details">
+
+				<h3>Dell - Inspiron 2-in-1 13.3" Touch-Screen Laptop - Intel Core i7 - 12GB Memory - 512GB Solid State Drive - Gray</h3>
+				<p>All-in-one Dell Inspiron computer. The 13-inch Full HD touch screen provides clarity for fine-detail work, and the small footprint makes it easy to take it anywhere. This Dell Inspiron computer converts four ways so you can find a comfortable position to work where ever you are.</p>
+
+				</div><div class="purchase-it-button">Purchase</div>
+</div>
+					
 			</div>
-		</div>
-		<div class="comp-product">
-			<canvas id="canvas" style="background-image: url('images/laptop.jpg'); width: 400px; height: 300px; background-size: cover"></canvas>
-				<div style="background-color: rgba(0,0,0,0.2); height: 300px; width: 400px;">
-					<div id="comp-spidergraphcontainer">
- 
-				</div>	
-			</div>				
-		</div>
-		<div class="comp-product">
-			<canvas id="canvas" style="background-image: url('images/laptop.jpg'); width: 400px; height: 300px; background-size: cover"></canvas>
-				<div style="background-color: rgba(0,0,0,0.2); height: 300px; width: 400px;">
-					<div id="comp-spidergraphcontainer">
- 
-				</div>	
-			</div>				
-		</div>
 	
+		<div class="comp-product">
+			<div class="label" style="background-color: rgba(230,100,100,0.8)">Lowest Price</div>
+			<div style="background-color: rgba(0,0,0,0.2); height: 300px; width: 400px;">
+			<div class="close"></div>
+				<div id="comp-spidergraphcontainer">
+					<div id="product2"></div>
+				</div>
+			</div>			
+			<canvas id="canvas2" style="background-image: url('images/yoga-laptop.jpg'); width: 400px; height: 300px; background-size: cover"></canvas>
+				<div style="background-color: rgba(0,0,0,0.2); height: 300px; width: 400px;">
+						<div class="product-details">
+
+				<h3>2016 Newest Lenovo Yoga Premium 15.6’’ 2-in-1 Touchscreen IPS FHD (1920 x 1080) Laptop PC, Intel Core i5-6200U 2.3GHz, 8GB RAM</h3>
+				<p>6th Gen Intel Core i5-6200U Dual Core Processor 2.3 GHz (Max boost speed up to 2.8GHz) 3MB L3 Cache, Backlit keyboard
+8GB DDR4 SDRAM 2133 MHz (Expandable to 16GB), 256GB Solid State Drive, Intel HD Graphics 520, no optical drive
+360° flip-and-fold Convertible design, 15.6-inch 10-point multitouch screen, LED backlight Full HD 1920 x 1080, IPS technology, JBL Audio.</p>
+				
+				</div><div class="purchase-it-button">Purchase</div>
+			</div>				
+		</div>
+		<div class="comp-product">
+			<div class="label" style="background-color: rgba(0,204,120,0.8)">Best Battery</div>
+			<div style="background-color: rgba(0,0,0,0.2); height: 300px; width: 400px;">
+			<div class="close"></div>
+					<div id="comp-spidergraphcontainer">
+						<div id="product3"></div>
+					</div>	
+				</div>	
+			<canvas id="canvas3" style="background-image: url('images/lenovo.png'); width: 400px; height: 300px; background-size: cover; background-color: #fff;"></canvas>
+				<div style="background-color: rgba(0,0,0,0.2); height: 300px; width: 400px;">
+				
+						<div class="product-details">
+
+				<h3>Lenovo Yoga 2 11.6" TouchScreen 2-in-1 Laptop PC - Intel Pentium N3520 / 4GB DDR3L / 500GB HD / HD Webcam / WLAN 802.11b/g/n / Bluetooth 4.0 / Windows 8.1 64-bit</h3>
+				<p>Intel Pentium processor N3520 - Features a 2.17GHz processor speed with bursts up to 2.42GHz.4GB DDR3L memory - For multitasking power.Note: Optical drive not included - Compatible with optional external recordable CD/DVD drives (not included).11.6" LED high-definition widescreen 10-point capacitive multitouch display - With IPS technology, 300 cd/m² brightness and 1366 x 768 resolution.</p>
+				
+				</div>	<div class="purchase-it-button">Purchase</div>
+					</div>
+		</div>
+		
 	</div>
 	<div style="clear: both"></div>
 	<div id="footer">
 		<p style="float: left;">BY <strong>BLAKE WILLIFORD + JACOB STAFFORD</strong></p>
 		<p style="float: right;"><strong>2017</strong> EDITION</p>
 	</div>
+	
 
 	
 	
@@ -91,7 +126,7 @@
 
 	
 	
-    <script src="js/main.js"></script>
+    <script src="js/comp.js"></script>
 	<script type="text/paperscript" canvas="canvas">
 	
 	function onMouseDown(event) {
@@ -107,8 +142,38 @@ function onMouseDrag(event) {
 	//var timesample = date.getTime();
 	//t.push(timesample);	
 }
-
+	</script>
+	<script type="text/paperscript" canvas="canvas2">
 	
+	function onMouseDown(event) {
+	path = new Path();
+	path.strokeColor = 'red';
+	path.strokeWidth = '4';
+	path.add(event.point);
+}
+
+function onMouseDrag(event) {
+	path.add(event.point);
+	//var date = new Date();
+	//var timesample = date.getTime();
+	//t.push(timesample);	
+}
+	</script>
+	<script type="text/paperscript" canvas="canvas3">
+	
+	function onMouseDown(event) {
+	path = new Path();
+	path.strokeColor = 'red';
+	path.strokeWidth = '4';
+	path.add(event.point);
+}
+
+function onMouseDrag(event) {
+	path.add(event.point);
+	//var date = new Date();
+	//var timesample = date.getTime();
+	//t.push(timesample);	
+}
 	</script>
 	
 

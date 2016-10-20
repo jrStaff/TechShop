@@ -37,11 +37,11 @@ ul {
 #intro {
 	background-image: url('../images/intro-bg.jpg');
 	background-attachment: cover;
-	height: 100%;
+	height: 1000px;
 }
 
 #intro-logo {
-	padding-top: 200px;
+	padding-top: 100px;
 	text-align: center;
 	margin: auto;
 }
@@ -54,7 +54,6 @@ ul {
 	width: 150px;
 	line-height: 50px;
 	box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
-
 }
 
 #intro-button:hover {
@@ -63,8 +62,16 @@ ul {
 	
 }
 
+.label {
 
-
+	line-height: 50px;
+	width: 140px;
+	padding: 0 20px 0 20px;
+	height: 50px;
+	color: #fff;
+	font-family: 'Roboto', Sans-serif;
+	text-transform: uppercase;
+}
 
 
 /*Header*/
@@ -88,7 +95,7 @@ ul {
 	margin: 0 auto 0 auto;
 	padding: 0;
 	border-bottom: 4px solid rgba(255,255,255,0.3);
-	width: 600px;
+	width: 650px;
 }
 
 #nav li {
@@ -98,7 +105,7 @@ ul {
 	font-size: 18px;
 	font-weight:100;
 	line-height: 55px;
-	padding: 23px 30px 16px 30px;
+	padding: 23px 30px 17px 30px;
 	width: 150px;
 	margin-right: -4px;
 
@@ -151,17 +158,69 @@ ul {
 }
 /*Spider*/
 #spidergraphcontainer {
+	background-color: rgba(0,0,0,0.3);
 	
     width: 600px;
     height: 600px;
 	position: relative;
     margin: 0 auto 0 auto;
     color: #fff;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
+	float: left;
+	margin-left: 90px;
 	
 }
+
+#spidergraphcomparison {
+    width: 600px;
+    height: 600px;
+	position: relative;
+    margin: 0 auto 0 auto;
+    color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+}
+
+#product1 {
+    width: 300px;
+    height: 300px;
+	position: relative;
+    color: #ddd;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-left: 60px;
+}
+#product2 {
+    width: 300px;
+    height: 300px;
+	position: relative;
+    color: #ddd;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-left: 60px;
+}
+#product3 {
+    width: 300px;
+    height: 300px;
+	position: relative;
+    color: #ddd;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-left: 60px;
+}
+
+
+
 
 #spidergraphcontainer:hover {
 	cursor: pointer;
@@ -169,10 +228,8 @@ ul {
 }
 
 #comp-spidergraphcontainer {
-	
     width: 300px;
     height: 300px;
-
 }
 
 
@@ -212,9 +269,11 @@ facets ul,li {
 	
 }
 .product {
-	background-color: #fff;
+	background-color: #FFF;
 	min-height: 250px;
+	margin-bottom: 50px;
 }
+
 .product img {
 	padding: 30px;
 	height: 200px;
@@ -222,8 +281,14 @@ facets ul,li {
 }
 
 .product-content {
-	padding: 20px 100px 0 0;
+	padding: 20px 100px 20px 0;
 	
+}
+
+.product-content p{
+	color: #000;
+	 text-align: center;
+	font-size: 14pt;
 }
 
 h3 {
@@ -239,7 +304,11 @@ h3 {
 	background-size: 50px;
 	width: 50px;
 	box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-
+}
+.close:hover {
+	color: red;
+	background-color: red;
+	transition-duration: 0.5s;
 }
 
 .dig-it-button {
@@ -250,7 +319,7 @@ h3 {
 	height: 50px;
 	width: 150px;
 	margin-right: 0px;
-	margin-top: -20px;
+	margin-top: -100px;
 	padding-left: 20px;
 	color: #eee;
 	font-size: 18px;
@@ -273,12 +342,51 @@ h3 {
 
 .comp-product {
 	width: 30%;
+	margin-left: 3%;
 	float: left;
-	margin: auto;
-	
-	
+	margin-bottom: 100px;
 }
 
+
+.comp-product p{
+	color: #000;
+
+}
+
+.product-details {
+padding: 30px;
+background-color: #eee;
+}
+
+.com-image {
+	background-size: cover;
+	width: 400px; 
+	height: 300px;
+}
+
+.purchase-it-button {
+	background: url('../images/thumb.svg') no-repeat center right;
+	background-size: 40px;
+	float: right;
+	background-color: darkred;
+	height: 50px;
+	width: 150px;
+	margin-right: 0px;
+	margin-top: -20px;
+	padding-left: 20px;
+	color: #eee;
+	font-size: 18px;
+	line-height: 50px;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	box-shadow: 0 10px 30px rgba(200,0,0,0.3);
+}
+
+.purchase-it-button:hover {
+	color: #fff;
+	background-color: #770000;
+	transition-duration: 0.5s;
+}
 
 #footer {
 	margin-top: 100px;
@@ -288,10 +396,5 @@ h3 {
 	padding: 0px 30px;
 	border-top: 1px solid rgba(255,255,255,0.1);
 	bottom:0;
-
-	
-
-
-	
 }
 
