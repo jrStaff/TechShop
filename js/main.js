@@ -4000,10 +4000,10 @@
     var profile = JSON.parse(localStorage.getItem("profile"));
     var laptops = JSON.parse(localStorage.getItem("laptops"));
     var randomImages = ['https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyS9urKcgtozVS4JzfHA43Rd-kRFf-VRVbqjpyBBqdGtbJmour','https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQak_qCQiC9oTQ2GbJOps17pO8fFySqGvll96UMk06HGxdMfeSiXA','https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvFVc5ENXdrKSjDt-XCVk_EcH4So5Q_5xngfGEvy1sTAi8MEXb'];  
-    if(laptops == null){
+    if(laptops === null){
          laptops = makeLaptopArray(productList);
     }
-    if(profile == null){
+    if(profile === null){
          profile = {
             "mRAM": 0,   
             "mCPU": 0,
@@ -4165,7 +4165,7 @@ function parseInfo(bsEntry){
     else if(bsEntry.hasOwnProperty('newegg_product')){
         var str = bsEntry.newegg_product.title + " " + bsEntry.newegg_product.description;
         newLaptop.title =  bsEntry.newegg_product.title;
-        newLaptop.description = bsEntry.newegg_product.description.substring(0,70);
+        newLaptop.description = bsEntry.newegg_product.description.toString().substring(0,70);
         var newS = /\d+( GB|GB)(.*?)(RAM|MEMORY)/i.exec(str);
         var newD = parseInt(/\d+/.exec(newS));
           newLaptop.type = 'newegg_product';

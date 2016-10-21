@@ -1,3 +1,4 @@
+
 var profile = JSON.parse(localStorage.getItem("profile"));
 if(profile == null) alert("Set some profile information on profile page up first!");
 var reviewsSlider = document.getElementById('reviews-toggle');
@@ -18,9 +19,9 @@ noUiSlider.create(reviewsSlider, {
 });
 
 reviewsSlider.noUiSlider.on('set.one', function(){
-    profile.reviewRange.low = reviewsSlider.noUiSlider.get()[0];
+    profile.reviewRange.low = parseInt(reviewsSlider.noUiSlider.get()[0]);
     profile.reviewRange.high = reviewsSlider.noUiSlider.get()[1];
-    fillandDisplayShowLaptops();    
+    fillandDisplayShowLaptops();
     localStorage.setItem("profile", JSON.stringify(profile));
 });
 
@@ -31,7 +32,7 @@ noUiSlider.create(priceSlider, {
     tooltips: [ true, true ],
     range: {
         'min': [100],
-        'max': [2000]
+        'max': [2200]
     },
         format: wNumb({
         decimals: 0,
@@ -127,15 +128,9 @@ if(laptops == null){
 localStorage.setItem('digitLaptops', JSON.stringify(digitLaptops));
 localStorage.setItem('showLaptops', JSON.stringify(showLaptops));
 
-function imageExists(laptop) {
-  var img = new Image();
-  img.onerror = function() { laptop.image_addr = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4B52aIDafEvjzWFDtl4DVAW4eivy1UZQpNFWjVPkXSlYkkB_r' };
-  img.src = laptop.image_addr;
-}
 function addLaptopToDOM(laptop){
     globalDOMLaptops += 1;
     var element = $('#products');
-    imageExists(laptop);
     var html = $('<div class="close" id="'+globalDOMLaptops+'close"></div>' +
                     '<li class="product" id ="'+ globalDOMLaptops +'product">'+
                     '<img src="'+laptop.image_addr +'"></img>'+
@@ -149,6 +144,10 @@ function addLaptopToDOM(laptop){
                     '<div class="break" id="'+globalDOMLaptops+'break></div>');
 
     element.append(html);
+
+    var html = $('<div id="'+globalDOMLaptops+'master><div class="close" id="'+globalDOMLaptops+'close"></div><li class="product" id ="'+ globalDOMLaptops +'product"><img src="'+laptop.image_addr +'"></img><div class="product-content"><h3>'+ laptop.title +'</h3><p>' + laptop.description + '</p><p>' + laptop.price +'$</p><p> '+ laptop.rating+' stars out of 5</p></div></li><div class="dig-it-button" id="btn'+globalDOMLaptops+'">I can <strong>Dig</strong> it</div><div class="break" id="'+globalDOMLaptops+'break></div></div>');
+    element.append(html);
+
     showLaptops.push(laptop);
 
     $('#btn'+globalDOMLaptops).live('click', function(e) { 
@@ -157,7 +156,6 @@ function addLaptopToDOM(laptop){
          $('#'+num+'close').remove();
          $('#'+num+'break').remove();
          $('#btn'+num).remove();
-         console.log(showLaptops[num]);
         digitLaptops.push(showLaptops[num]);
         remainingLaps = remainingLaps.filter(function(laptop) {
             return laptop.description !== showLaptops[num].description;
@@ -165,7 +163,7 @@ function addLaptopToDOM(laptop){
         localStorage.setItem('digitLaptops', JSON.stringify(digitLaptops));
         console.log("Digged it!");
     });
-    $('#'+globalDOMLaptops+'close').live('click', function(e) { 
+    $('#'+globalDOMLaptops).live('click', function(e) { 
         var num = parseInt(/\d+/.exec(e.srcElement.id));
         $('#'+num+'product').remove();
         $('#'+num+'close').remove();
@@ -174,7 +172,6 @@ function addLaptopToDOM(laptop){
         remainingLaps = remainingLaps.filter(function(laptop) {
             return laptop.description !== showLaptops[num].description;
         });
-
         console.log("Hate it!");
     });
 }
@@ -226,11 +223,8 @@ function fillandDisplayShowLaptops(){
         alert("Your search is too refined! No laptops found.");
     }
     localStorage.setItem("showLaptops", JSON.stringify(showLaptops));
-}
-
-
+ }
  window.onload = function() {
         fillandDisplayShowLaptops();
         console.log(remainingLaps);
 };
-

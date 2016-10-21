@@ -1,4 +1,4 @@
-
+var digitLaptops = JSON.parse(localStorage.getItem('digitLaptops'));
 $('#spidergraphcomparison').spidergraph({
         'fields': ['RAM','CPU','Low Weight','Good Reviews','Lower Price', 'Battery Life'],
         'increments': 5,
@@ -47,8 +47,6 @@ function addLaptopToDOM(laptop){
                             '<p>'+ laptop.rating +'</p>'+
                         '</div>'+
                  '<div class="purchase-it-button" id = "btn'+ num +'">Purchase  </div></div></div>');
-
-		
                  
     element.append(html);
 
@@ -61,7 +59,7 @@ function addAllDigged(){
     for(var i = 0; i < diggedLaptops.length; i++){
         if(diggedLaptops != null)
             addLaptopToDOM(diggedLaptops[i]);
-            
     }
 }
 window.onload = addAllDigged;
+

@@ -10,11 +10,12 @@
 		<script src="js/paper-full.js"></script>
 		
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
-   
+   		<script src="js/main.js"></script>
+    	<script src="js/comp.js"></script>
 
  
    </head>
-    <body>
+    <body onload="addAllDigged();">
 	<script src="js/nouislider.min.js"></script>
 
 	
@@ -91,56 +92,47 @@
 				</div>	<div class="purchase-it-button">Purchase</div>
 					</div>
 		</div>
-		
+	</div>
 	</div>
 	<div style="clear: both"></div>
 	<div id="footer">
 		<p style="float: left;">BY <strong>BLAKE WILLIFORD + JACOB STAFFORD</strong></p>
 		<p style="float: right;"><strong>2017</strong> EDITION</p>
+	</div>	
 	</div>
-	
-
-	
-	
-	</div>
-	
-
-	
-
 	
 	
     <script src="js/comp.js"></script>
 	<script type="text/paperscript" canvas="canvas">
 	
 	function onMouseDown(event) {
-	path = new Path();
-	path.strokeColor = 'red';
-	path.strokeWidth = '4';
-	path.add(event.point);
-}
+		path = new Path();
+		path.strokeColor = 'red';
+		path.strokeWidth = '4';
+		path.add(event.point);	
+	}
 
-function onMouseDrag(event) {
-	path.add(event.point);
-	//var date = new Date();
-	//var timesample = date.getTime();
-	//t.push(timesample);	
-}
+	function onMouseDrag(event) {
+		path.add(event.point);
+		//var date = new Date();
+		//var timesample = date.getTime();
+		//t.push(timesample);	
+	}
 	</script>
 	<script type="text/paperscript" canvas="canvas2">
-	
-	function onMouseDown(event) {
-	path = new Path();
-	path.strokeColor = 'red';
-	path.strokeWidth = '4';
-	path.add(event.point);
-}
+		function onMouseDown(event) {
+			path = new Path();
+			path.strokeColor = 'red';
+			path.strokeWidth = '4';
+			path.add(event.point);
+		}
 
-function onMouseDrag(event) {
-	path.add(event.point);
-	//var date = new Date();
-	//var timesample = date.getTime();
-	//t.push(timesample);	
-}
+	function onMouseDrag(event) {
+		path.add(event.point);
+		//var date = new Date();
+		//var timesample = date.getTime();
+		//t.push(timesample);	
+	}
 	</script>
 	<script type="text/paperscript" canvas="canvas3">
 	
@@ -156,10 +148,8 @@ function onMouseDrag(event) {
 	//var date = new Date();
 	//var timesample = date.getTime();
 	//t.push(timesample);	
-}
+}	
 	</script>
-	
 
-	
     </body>
 </html>
