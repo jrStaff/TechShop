@@ -4013,16 +4013,16 @@
             "mBATT": 0,
             "brand": "",
             "reviewRange":{
-                "low": 1,
-                "high": 5
+                "low": "1 STARS",
+                "high": "5 STARS"
             },
             "priceRange":{
-                "low": 100,
-                "high": 2000
+                "low": "\$100",
+                "high": "\$2000"
             },
             "batteryRange":{
-                "low": 3,
-                "high": 10
+                "low": "3 HRS",
+                "high": "10 HRS"
             },
             "weightRange":{
                 "low": 1,
@@ -4099,8 +4099,10 @@ function parseInfo(bsEntry){
         "title": "",
         "weight": 0,
         "description": "",
-        "rank": 0
+        "rank": 0,
+        "location": ""
     };
+
     if(bsEntry.hasOwnProperty('amazon_product')){
         var str = bsEntry.amazon_product.title + " " + bsEntry.amazon_product.description;
         newLaptop.description = bsEntry.amazon_product.description.substring(0,70);
@@ -4142,6 +4144,8 @@ function parseInfo(bsEntry){
 
         newLaptop.image_addr = bsEntry.amazon_product.main_images[0].location;
 
+        newLaptop.location = bsEntry.amazon_product.location;
+
         newLaptop.reviews = bsEntry.amazon_product.reviews;
         var reviewStr = "";
         if(newLaptop.reviews != null){
@@ -4155,6 +4159,7 @@ function parseInfo(bsEntry){
             } else newLaptop.weight = 0;
         } else newLaptop.weight = 0;
         newLaptop.type = 'amazon_product';
+        
         return newLaptop;
     }
     else if(bsEntry.hasOwnProperty('newegg_product')){
@@ -4194,10 +4199,12 @@ function parseInfo(bsEntry){
 
         newLaptop.rating = parseFloat(/[-+]?[0-9]*\.?[0-9]*/.exec(bsEntry.newegg_product.overall_rating.ratingValue));
 
-        newLaptop.image_addr = randomImage[parseInt(Math.random()*3)];
+        newLaptop.image_addr = randomImages[parseInt(Math.random()*3)];
 
-        
         newLaptop.reviews = bsEntry.newegg_product.reviews;
+
+        newLaptop.location = bsEntry.newegg_product.location;
+
         return newLaptop;
     }
     else {
@@ -4243,6 +4250,8 @@ function parseInfo(bsEntry){
         newLaptop.image_addr = bsEntry.tigerdirect_product.main_images[0].location;
 
         newLaptop.reviews = {}
+
+        newLaptop.location = bsEntry.tigerdirect_product.location;
 
         return newLaptop;
     }
